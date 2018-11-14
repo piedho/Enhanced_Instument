@@ -17,7 +17,7 @@ A=h*larg %section en m^2
 rho=7500 %masse volumique; 7500 pour l'acier (kg/m^3)
 E=210000000 %module de Young, module d'elasticité 210000000 correspond à celui d'un acier de construction
 n=100 % n=1 correspond au fondamental; n entier
-Cl=334 %vitesse propag onde (m/s) 334 pour onde acoustique à 20°C dans l'air
+%Cl=334 %vitesse propag onde (m/s) 334 pour onde acoustique à 20°C dans l'air
 I=larg*h*h*h/12 % momet d'inertie de la section droite selon y (en m^4)
 %Beta=(2*n-1)*Pi/(2*l)
 sigma=1 %dépend de n mais vaut globalement 1 à n>0 en free free;
@@ -34,14 +34,14 @@ Bn=(2*n-1)*Pi/(2*l);
 %           plot(x,deplacementval);
 %           hold on
         end
-      h = figure;
+      hf = figure;
       axis tight manual % this ensures that getframe() returns a consistent size
-      filename = 'barrefreeflexion.gif';
-      plot(x,deplacementval);
-      axis([0 l -0.00009 0.00009])
+      filename = 'barrefreeflexiongras.gif';
+      plot(x,deplacementval,'LineWidth',h*2*1000);
+      axis([0-0.1*l l+0.1*l -0.00009 0.00009])
       drawnow 
       % Capture the plot as an image 
-      frame = getframe(h); 
+      frame = getframe(hf); 
       im = frame2im(frame); 
       [imind,cm] = rgb2ind(im,256); 
       % Write to the GIF File 
