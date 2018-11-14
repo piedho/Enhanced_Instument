@@ -1,0 +1,240 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel} 
+\usepackage{lmodern} % Pour changer le pack de police
+%\usepackage{layout}
+%\usepackage{geometry}
+%\usepackage{setspace}
+%\usepackage{soul}
+%\usepackage{ulem}
+%\usepackage{eurosym}
+%\usepackage{bookman}
+%\usepackage{charter}
+%\usepackage{newcent}
+%\usepackage{lmodern}
+%\usepackage{mathpazo}
+%\usepackage{mathptmx}
+%\usepackage{url}
+%\usepackage{verbatim}
+%\usepackage{moreverb}
+%\usepackage{listings}
+%\usepackage{fancyhdr}
+%\usepackage{wrapfig}
+%\usepackage{color}
+%\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+%\usepackage{asmthm}
+%\usepackage{makeidx}
+\author{\textsc{Nom} Prénom}
+\date{\today} 
+\title{Mon titre d'article}
+\begin{document}
+\begin{abstract}
+Le résumé (abstract en anglais) de mon article.
+\end{abstract}
+
+\begin{equation} %debut math
+ \frac{E I}{\rho A}  \frac{\partial^4 w(x,t)}{\partial x^4} + \frac{\partial^2 w(x,t)}{\partial t^2  } = 0
+ \end{equation}
+
+Résolution par la méthode de séparation des variables.\\
+On pose : \begin{math} w(x,t) = X(x)T(t)\end{math}.                                                      
+L'équation (1) devient 
+\begin{equation} %debut math
+ \mu ^2   \frac{X^{(4)}(x)}{X(x)} = - \frac{ \ddot T(t)}{T(t)}  = \omega^2  \text{\qquad avec\quad} \mu = \sqrt{ \frac{E I}{\rho A} }  \end{equation}
+Ce qui permet de poser deux équations séparées. L'équation pour la fonction dépendant du temps.
+\begin{equation} \ddot T(t)+ \omega^2 T(t) = 0  \end{equation}
+Ce qui conduit à
+\begin{equation} T(t) = a sin(\omega t) + b cos(\omega t) \end{equation}
+
+Et pour la fonction dépendant de la position
+\begin{equation} X^{(4)} - \beta^4 X(x) = 0 \text{\qquad avec\quad} \beta^4 = \frac{\omega^2}{\mu^2}=  \frac{\rho A \omega^2}{EI}    \end{equation}
+
+Ce qui, si on suppose des solutions de la forme \begin{math} D e^{sx} \end{math}, avec \begin{math} s \text{ et }  d  \end{math}  des constantes à déterminer, donne 
+\begin{equation} s^4 - \beta^4 = 0\end{equation}
+soit 
+\[  %begin of math
+s_{1,2}^2 = \beta^2 \Rightarrow 
+  \left\{
+      \begin{aligned}
+        s_1	&=&	\beta\\
+        s_2	&=&	-\beta\\
+      \end{aligned}
+    \right.
+\text{\qquad et\quad}
+s_{3,4}^2 = -\beta^2 \Rightarrow 
+  \left\{
+      \begin{aligned}
+        s_3	&=&	j\beta\\
+        s_4	&=&	-j\beta\\
+      \end{aligned}
+    \right.
+\] %end of math
+D'où la solution 
+\begin{equation} X(x) = D_1 e^{\beta x} +  D_2 e^{-\beta x} +  D_3 e^{j\beta x} +  D_4 e^{-j\beta x}\end{equation}
+Ou, sous une forme alternative 
+\begin{equation}  X(x) = C_1 sin{\beta x} +  C_2 cos{\beta x} +  C_3 sinh{\beta x} +  C_4 cosh{\beta x} \end{equation}
+
+Utilisation des conditions aux limites pour déterminer les constantes \begin{math} D_1 \end{math} à \begin{math} D_4 \end{math} ou  \begin{math} C_1 \end{math} à \begin{math} C_4 \end{math}
+\\
+Pour la poutre de longueur \begin{math} L \end{math} encastrée en \begin{math} x=L \end{math} et libre en \begin{math} x=0 \end{math}, les conditions aux limites s'écrivent
+\begin{equation} 
+	\left\{
+		\begin{aligned}
+			X(L) 	&=& 	0  &\Rightarrow&  D_1 e^{\beta L} +  D_2 e^{-\beta L} +  D_3 e^{j\beta L} +  D_4 e^{-j\beta L} =  0 \\
+			X'(L) 	&=&	0  &\Rightarrow&  \beta ( D_1 e^{\beta L} -  D_2 e^{-\beta L} + j D_3 e^{j\beta L} - j D_4 e^{-j\beta L} ) =  0\\
+			X''(0)	&=&	0  &\Rightarrow&  \beta^2 ( D_1  +  D_2 -   D_3  -  D_4 ) =  0  \\
+			X^{(3)} &=& 0  &\Rightarrow&  \beta^3 ( D_1  -  D_2 -  j D_3  + j D_4 ) =  0  \\
+		\end{aligned}	
+	\right.
+ \end{equation}
+
+Ces équations se mettent sous forme matricielle
+
+\begin{equation} 
+	\begin{pmatrix}
+   	e^{\beta L} 	& e^{-\beta L} 	& e^{j\beta L} 	& e^{-j\beta L}	\\
+   	 e^{\beta L} & -e^{-\beta L}	&j e^{j\beta L}	& -je^{-j\beta L}	\\
+  	 \beta^2	&\beta^2		&-\beta^2		&-\beta^2		\\
+	\beta^3	&-\beta^3		&-j\beta^3		&j\beta^3		\\
+	\end{pmatrix} 
+	\begin{pmatrix}
+   	D_1 	\\
+   	D_2	\\
+  	D_3	\\
+	D_4	\\
+	\end{pmatrix} 
+= 
+	\begin{pmatrix}
+   	0 	\\
+   	0	\\
+  	0	\\
+	0	\\
+	\end{pmatrix} 
+	\Rightarrow
+	A.D=0
+\end{equation}
+
+Ce système n'admet une solution non triviale, si et seulement si \begin{math} det(A)=0 \end{math}. Ce qui conduit à 
+\begin{equation} det(A) = -2j\beta^6 e^{-\beta L(1+2j)} [e^{j\beta L} + e^{3j\beta L} + 4e^{\beta L(1+2j)} + e^{\beta L (2+j)} + e^{\beta L(2+3j)} ] = 0     \end{equation}
+\begin{equation}e^{\beta L(1+2j)} [ e^{\beta L (-1-j)} + e^{\beta L (-1+j)} + 4 + e^{\beta L(1-j)} + e^{\beta L(1+j)} ] = 0  \end{equation}
+\begin{equation} (e^{j\beta L} + e^{-j\beta L})*(e^{\beta L}+e^{-\beta L})+4 = 0  \end{equation}
+Ce qui conduit à 
+\begin{equation} cos\beta L * cosh \beta L = -1  \end{equation}
+
+
+Pour l'autre forme de X(x), c'est à dire l'équation (8*), les conditions aux limites s'écrivent, pour une poutre encastrée en \begin{math} x=0 \end{math} et libre en \begin{math} x=L \end{math}
+
+
+\begin{equation} 
+	\left\{
+		\begin{aligned}
+			X(L) 	&=& 	0  &\Rightarrow&  C_2   +  C_4 =  0 \\
+			X'(L) 	&=&	0  &\Rightarrow&  C_1 + C_3  =  0\\
+			X''(0)	&=&	0  &\Rightarrow&  \beta^2 ( -C_1 sin(\beta L)  - C_2 cos(\beta L)  +  C_3 sinh(\beta L)  + C_4 cosh(\beta L) ) =  0  \\
+			X^{(3)} &=& 0  &\Rightarrow&  \beta^3 ( -C_1 cos(\beta L)  + C_2 sin(\beta L)  +  C_3 cosh(\beta L)  + C_4 sinh(\beta L) ) =  0  \\
+		\end{aligned}	
+	\right.
+ \end{equation}
+
+Ces équations se mettent sous forme matricielle
+
+\begin{equation} 
+	\begin{pmatrix}
+   	0 	& 1	& 0 	& 1	\\
+   	 1 & 0	& 1	& 0	\\
+  	 -\beta^2sin(\beta L)	&-\beta^2cos(\beta L)		&\beta^2 sinh(\beta L)		&\beta^2cosh(\beta L)		\\
+	-\beta^3cos(\beta L)	&\beta^3sin(\beta L)		&\beta^3 cosh(\beta L)		&j\beta^3 sinh(\beta L)		\\
+	\end{pmatrix} 
+	\begin{pmatrix}
+   	C_1 	\\
+   	C_2	\\
+  	C_3	\\
+	C_4	\\
+	\end{pmatrix} 
+= 
+	\begin{pmatrix}
+   	0 	\\
+   	0	\\
+  	0	\\
+	0	\\
+	\end{pmatrix} 
+	\Rightarrow
+	A.C=0
+\end{equation}
+
+De la même manière, ce système n'admet une solution non triviale, si et seulement si \begin{math} det(A)=0 \end{math}. Ce qui conduit à 
+\begin{equation} det(A) =cosh^2 + 2cos.cosh - cos^2 - sin  h^2 + sin^2 = 0   \end{equation}
+\begin{equation}\iff 2cos.cosh = (sinh^2 - cosh^2) - (cos^2 + sin^2)   \end{equation}
+Ce qui conduit à 
+\begin{equation} cos\beta L * cosh \beta L = -1  \end{equation}
+
+Les 2 formes de \begin{math} X(x) = D_1 e^{\beta x} +  D_2 e^{-\beta x} +  D_3 e^{j\beta x} +  D_4 e^{-j\beta x} =  C_1 sin{\beta x} +  C_2 cos{\beta x} +  C_3 sinh{\beta x} +  C_4 cosh{\beta x} \end{math} conduisent bien à la même condition sur \begin{math} \beta_n \end{math}.
+
+
+
+
+Cette équation est vérifiée par une infinité de valeurs \begin{math} \beta_n \end{math} que l'on calcule numériquement. 
+
+\begin{tabular}{|c|c|}
+\hline
+n & \begin{math} \beta_n \end{math} \\ \hline
+1 & 1.87510407 \\ \hline
+2 & 4.69409113 \\ \hline
+3 & 7.85475744	\\ \hline
+4 & 10.99554073	\\ \hline
+5 & 14.13716839	\\ \hline
+\end{tabular}
+\\\\
+Pour des n grand, \begin{math} n>5 \end{math}, le \begin{math} cosh \end{math} deveint très grand, et l'équation (14*) ne peut être vérifiée que si le \begin{math} cos \end{math} est très proche de 0. On utilise donc comme approximation \begin{equation} \beta_n = \frac{(2n-1)\pi}{2} \text{\qquad avec\quad} n>5\end{equation}
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
