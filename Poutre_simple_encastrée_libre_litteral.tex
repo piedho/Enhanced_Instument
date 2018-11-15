@@ -5,7 +5,8 @@
 \usepackage[french]{babel} 
 \usepackage{lmodern} % Pour changer le pack de police
 %\usepackage{layout}
-%\usepackage{geometry}
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
 %\usepackage{setspace}
 %\usepackage{soul}
 %\usepackage{ulem}
@@ -85,10 +86,10 @@ Pour la poutre de longueur \begin{math} L \end{math} encastrée en \begin{math} 
 \begin{equation} 
 	\left\{
 		\begin{aligned}
-			X(L) 	&=& 	0  &\Rightarrow&  D_1 e^{\beta L} +  D_2 e^{-\beta L} +  D_3 e^{j\beta L} +  D_4 e^{-j\beta L} =  0 \\
-			X'(L) 	&=&	0  &\Rightarrow&  \beta ( D_1 e^{\beta L} -  D_2 e^{-\beta L} + j D_3 e^{j\beta L} - j D_4 e^{-j\beta L} ) =  0\\
-			X''(0)	&=&	0  &\Rightarrow&  \beta^2 ( D_1  +  D_2 -   D_3  -  D_4 ) =  0  \\
-			X^{(3)} &=& 0  &\Rightarrow&  \beta^3 ( D_1  -  D_2 -  j D_3  + j D_4 ) =  0  \\
+			X(L) 	&=& 	0  &\Rightarrow  D_1 e^{\beta L} +  D_2 e^{-\beta L} +  D_3 e^{j\beta L} +  D_4 e^{-j\beta L} =  0 \\
+			X'(L) 	&=&	0  &\Rightarrow  \beta ( D_1 e^{\beta L} -  D_2 e^{-\beta L} + j D_3 e^{j\beta L} - j D_4 e^{-j\beta L} ) =  0\\
+			X''(0)	&=&	0  &\Rightarrow  \beta^2 ( D_1  +  D_2 -   D_3  -  D_4 ) =  0  \\
+			X^{(3)} &=& 0  &\Rightarrow  \beta^3 ( D_1  -  D_2 -  j D_3  + j D_4 ) =  0  \\
 		\end{aligned}	
 	\right.
  \end{equation}
@@ -119,10 +120,10 @@ Ces équations se mettent sous forme matricielle
 	A.D=0
 \end{equation}
 
-Ce système n'admet une solution non triviale, si et seulement si \begin{math} det(A)=0 \end{math}. Ce qui conduit à 
+Ce système admet une solution non triviale, si et seulement si \begin{math} det(A)=0 \end{math}. Ce qui conduit à 
 \begin{equation} det(A) = -2j\beta^6 e^{-\beta L(1+2j)} [e^{j\beta L} + e^{3j\beta L} + 4e^{\beta L(1+2j)} + e^{\beta L (2+j)} + e^{\beta L(2+3j)} ] = 0     \end{equation}
-\begin{equation}e^{\beta L(1+2j)} [ e^{\beta L (-1-j)} + e^{\beta L (-1+j)} + 4 + e^{\beta L(1-j)} + e^{\beta L(1+j)} ] = 0  \end{equation}
-\begin{equation} (e^{j\beta L} + e^{-j\beta L})*(e^{\beta L}+e^{-\beta L})+4 = 0  \end{equation}
+\begin{equation} \iff e^{\beta L(1+2j)} [ e^{\beta L (-1-j)} + e^{\beta L (-1+j)} + 4 + e^{\beta L(1-j)} + e^{\beta L(1+j)} ] = 0  \end{equation}
+\begin{equation}\iff (e^{j\beta L} + e^{-j\beta L})*(e^{\beta L}+e^{-\beta L})+4 = 0  \end{equation}
 Ce qui conduit à 
 \begin{equation} cos\beta L * cosh \beta L = -1  \end{equation}
 
@@ -133,10 +134,10 @@ Pour l'autre forme de X(x), c'est à dire l'équation (8*), les conditions aux l
 \begin{equation} 
 	\left\{
 		\begin{aligned}
-			X(L) 	&=& 	0  &\Rightarrow&  C_2   +  C_4 =  0 \\
-			X'(L) 	&=&	0  &\Rightarrow&  C_1 + C_3  =  0\\
-			X''(0)	&=&	0  &\Rightarrow&  \beta^2 ( -C_1 sin(\beta L)  - C_2 cos(\beta L)  +  C_3 sinh(\beta L)  + C_4 cosh(\beta L) ) =  0  \\
-			X^{(3)} &=& 0  &\Rightarrow&  \beta^3 ( -C_1 cos(\beta L)  + C_2 sin(\beta L)  +  C_3 cosh(\beta L)  + C_4 sinh(\beta L) ) =  0  \\
+			X(L) 	&=& 	0  &\Rightarrow  C_2   +  C_4 =  0 \\
+			X'(L) 	&=&	0  &\Rightarrow  C_1 + C_3  =  0\\
+			X''(0)	&=&	0  &\Rightarrow  \beta^2 ( -C_1 sin(\beta L)  - C_2 cos(\beta L)  +  C_3 sinh(\beta L)  + C_4 cosh(\beta L) ) =  0  \\
+			X^{(3)} &=& 0  &\Rightarrow  \beta^3 ( -C_1 cos(\beta L)  + C_2 sin(\beta L)  +  C_3 cosh(\beta L)  + C_4 sinh(\beta L) ) =  0  \\
 		\end{aligned}	
 	\right.
  \end{equation}
@@ -147,8 +148,8 @@ Ces équations se mettent sous forme matricielle
 	\begin{pmatrix}
    	0 	& 1	& 0 	& 1	\\
    	 1 & 0	& 1	& 0	\\
-  	 -\beta^2sin(\beta L)	&-\beta^2cos(\beta L)		&\beta^2 sinh(\beta L)		&\beta^2cosh(\beta L)		\\
-	-\beta^3cos(\beta L)	&\beta^3sin(\beta L)		&\beta^3 cosh(\beta L)		&j\beta^3 sinh(\beta L)		\\
+  	 -sin(\beta L)	&-cos(\beta L)		&sinh(\beta L)		&cosh(\beta L)		\\
+	-cos(\beta L)	&sin(\beta L)		&cosh(\beta L)		&sinh(\beta L)		\\
 	\end{pmatrix} 
 	\begin{pmatrix}
    	C_1 	\\
@@ -174,11 +175,8 @@ Ce qui conduit à
 \begin{equation} cos\beta L * cosh \beta L = -1  \end{equation}
 
 Les 2 formes de \begin{math} X(x) = D_1 e^{\beta x} +  D_2 e^{-\beta x} +  D_3 e^{j\beta x} +  D_4 e^{-j\beta x} =  C_1 sin{\beta x} +  C_2 cos{\beta x} +  C_3 sinh{\beta x} +  C_4 cosh{\beta x} \end{math} conduisent bien à la même condition sur \begin{math} \beta_n \end{math}.
-
-
-
-
-Cette équation est vérifiée par une infinité de valeurs \begin{math} \beta_n \end{math} que l'on calcule numériquement. 
+\\\\
+Cette équation (19*) est vérifiée par une infinité de valeurs \begin{math} \beta_n \end{math} que l'on calcule numériquement. 
 
 \begin{tabular}{|c|c|}
 \hline
@@ -192,28 +190,44 @@ n & \begin{math} \beta_n \end{math} \\ \hline
 \\\\
 Pour des n grand, \begin{math} n>5 \end{math}, le \begin{math} cosh \end{math} deveint très grand, et l'équation (14*) ne peut être vérifiée que si le \begin{math} cos \end{math} est très proche de 0. On utilise donc comme approximation \begin{equation} \beta_n = \frac{(2n-1)\pi}{2} \text{\qquad avec\quad} n>5\end{equation}
 
+A partir de la quantification de de \begin{math} \beta_n \end{math} et de l'équation (5), on obtient les pulsations naturelles
+\begin{equation}  \beta^4 = \frac{\omega^2}{\mu^2}\Rightarrow  \omega_n = (\beta_n L)^2 \sqrt{  \frac{EI}{\rho A L^4}}  \text{\qquad avec\quad} n=1,2,3,... \end{equation}
 
+Pour obtenir les \textbf{déformées modales}, on utilise les relations entre les coefficients \begin{math} C_1 \; à \;  C_4 \end{math} du système (15*).
+Ce qui conduit à \begin{math} C_1=-C_3 \end{math} et \begin{math}  C_2 = -C_4 \end{math}.
+D'où
+
+\begin{equation} C_3 sin(\beta_n L)  + C_4 cos(\beta_n L)  +  C_3 sinh(\beta_n L)  + C_4 cosh(\beta_n L)  =  0  \end{equation}
+\begin{equation} \iff C_3 (sin + sinh) + C_4 (cos + cosh) = 0  \end{equation}
+\begin{equation} \iff C3 = - \frac{cos + cosh}{sin + sinh}C_4 \end{equation}
+\begin{equation} \iff \boxed{C3 = - \sigma_n C_4} \text{\qquad avec\quad} \sigma_n= \frac{cos(\beta_n L) + cosh(\beta_n L)}{sin(\beta_n L) + sinh(\beta_n L)}\end{equation}
+
+
+La fonction de variable \begin{math} x  \end{math} peut alors s'écrire 
+
+\begin{equation} 
+	\begin{aligned}
+			 X_n(x) 	&=	C_ n[ (sin(\beta_n x) + sinh(\beta_n x)) - \sigma_n (cos(\beta_n x) + cosh(\beta_n x))] \\
+			  		&=	C_n \phi_n(x) \\
+	\end{aligned}
+\end{equation}
+
+
+En conclusion, l'équation du déplacement est (équation (4*) et (26*)
+\begin{equation} \boxed{ w(x,t)= X(x) T(t) = \sum_{n=1}^{\infty} C_n \phi_n(x) [a\sin(\omega_n t) + b\cos(\omega_n t)] } \end{equation}
+
+
+
+
+
+
+
+ 
 
 
 
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
