@@ -25,7 +25,7 @@ deplacementval=0;
 An=0;
 Bn=(2*n-1)*Pi/(2*l);
 
-    for t = t : 0.0001 : t+0.0058
+%    for t = t : 0.0001 : t+0.0058
         for n = 1 : n
             Bn=(8*F*l/(E*A*Pi*Pi)*((-1)^(n+1))/(2*n-1)^2);
             Beta=(2*n+1)*Pi/(2*l);
@@ -33,7 +33,7 @@ Bn=(2*n-1)*Pi/(2*l);
             deplacementval=deplacementval+((An*sin(Wn*t)+Bn*cos(Wn*t))*(cosh(Beta*x)+cos(Beta*x)-sigma*(sinh(Beta*x)+sin(Beta*x)))); %somme fonction n, en théorie somme jusque l'infini
 %           plot(x,deplacementval);
 %           hold on
-        end
+%        end
       hf = figure;
       axis tight manual % this ensures that getframe() returns a consistent size
       filename = 'barrefreeflexiongras.gif';
