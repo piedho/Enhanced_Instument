@@ -1,6 +1,4 @@
- t=0;%temps en seconde; ici on initialise le temps t0
- x=[0:0.001:0.1];
-deplacement(x,t);
+
 
 function [deplacementlibre] = deplacement(x,t)
 %gere le deplacement lors des vibrations (acoustiques) longitudinales d'une
@@ -30,32 +28,11 @@ Bn=(2*n-1)*Pi/(2*l);
         for n = 1 : n
             Bn=(8*F*l/(E*A*Pi*Pi)*((-1)^(n+1))/(2*n-1)^2);
             Beta=(2*n-1)*Pi/(2*l);
-            sigma=(sinh(Beta*l)-sin(Beta*l))/(cosh(Beta*l)-cos(Beta*l));
+            sigma=(cos(Beta*l)+cosh(Beta*l))/(sin(Beta*l)+sinh(Beta*l));
             Wn=Beta*Beta*sqrt(E*I/(rho*A)); %pulsation naturelle
             t=0;
             deplacementval=((An*sin(Wn*t)+Bn*cos(Wn*t))*(cosh(Beta*x)-cos(Beta*x)-sigma*(sinh(Beta*x)-sin(Beta*x)))); %somme fonction n, en théorie somme jusque l'infini
-%            sigma=1; %dépend de n mais vaut globalement 1 à n>1; pour n=1, vaut 0.7341
-% %           plot(x,deplacementval);
-% %           hold on
-% %        end
-%         
-%       hf = figure;
-%       axis tight manual % this ensures that getframe() returns a consistent size
-%       filename = 'barrefixefreeflexiongras.gif';
-%       plot(x,deplacementval,'LineWidth',h*2*1000);
-%       axis([0 l+0.1*l -0.00009 0.00009])
-%       drawnow 
-%       % Capture the plot as an image 
-%       frame = getframe(hf); 
-%       im = frame2im(frame); 
-%       [imind,cm] = rgb2ind(im,256); 
-%       % Write to the GIF File 
-%       if t == 0 
-%           imwrite(imind,cm,filename,'gif', 'Loopcount',inf); 
-%       else 
-%           imwrite(imind,cm,filename,'gif','WriteMode','append'); 
-%       end       
-
+   
         plot(x,deplacementval);
         xlabel('longueur barre')
         ylabel('déplacement vertical')
@@ -68,3 +45,9 @@ Bn=(2*n-1)*Pi/(2*l);
         plot(x,zeros(size(x)),'black','linewidth',2);
         legend({'harmonique 1' 'harmonique 2' 'harmonique 3' 'barre fixe'},'Location','northwest')
 end
+
+
+t=0;%temps en seconde; ici on initialise le temps t0
+x=[0:0.001:0.1];
+deplacement(x,t);
+
