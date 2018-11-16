@@ -55,9 +55,16 @@ Bn=(2*n-1)*Pi/(2*l);
 %       else 
 %           imwrite(imind,cm,filename,'gif','WriteMode','append'); 
 %       end       
-      
+
         plot(x,deplacementval);
+        xlabel('longueur barre')
+        ylabel('déplacement vertical')
+        title('vibrations des premiers modes propres de la barre')
         hold on
+        %legend({'harmonique 1' 'harmonique 2' 'harmonique 3' 'barre fixe'},'Location','southwest')
+        %hold on
+        %plot(x,zeros(size(x)),'black','linewidth',2);
+        end
         plot(x,zeros(size(x)),'black','linewidth',2);
-    end
+        legend({'harmonique 1' 'harmonique 2' 'harmonique 3' 'barre fixe'},'Location','northwest')
 end
