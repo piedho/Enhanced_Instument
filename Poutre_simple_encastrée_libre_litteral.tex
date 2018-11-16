@@ -131,16 +131,18 @@ Ce qui conduit à
 Pour l'autre forme de X(x), c'est à dire l'équation (8*), les conditions aux limites s'écrivent, pour une poutre encastrée en \begin{math} x=0 \end{math} et libre en \begin{math} x=L \end{math}
 
 
-\begin{equation} 
+
+\begin{equation}
 	\left\{
 		\begin{aligned}
 			X(L) 	&=& 	0  &\Rightarrow  C_2   +  C_4 =  0 \\
 			X'(L) 	&=&	0  &\Rightarrow  C_1 + C_3  =  0\\
 			X''(0)	&=&	0  &\Rightarrow  \beta^2 ( -C_1 sin(\beta L)  - C_2 cos(\beta L)  +  C_3 sinh(\beta L)  + C_4 cosh(\beta L) ) =  0  \\
-			X^{(3)} &=& 0  &\Rightarrow  \beta^3 ( -C_1 cos(\beta L)  + C_2 sin(\beta L)  +  C_3 cosh(\beta L)  + C_4 sinh(\beta L) ) =  0  \\
-		\end{aligned}	
+			X^{(3)} &=& 0  &\Rightarrow  \beta^3 ( -C_1 cos(\beta L)  + C_2 sin(\beta L)  +  C_3 cosh(\beta L)  + C_4 sinh(\beta L) ) =  0  
+		\end{aligned}
 	\right.
- \end{equation}
+\end{equation}
+
 
 Ces équations se mettent sous forme matricielle
 
@@ -194,10 +196,10 @@ A partir de la quantification de de \begin{math} \beta_n \end{math} et de l'équ
 \begin{equation}  \beta^4 = \frac{\omega^2}{\mu^2}\Rightarrow  \omega_n = (\beta_n L)^2 \sqrt{  \frac{EI}{\rho A L^4}}  \text{\qquad avec\quad} n=1,2,3,... \end{equation}
 
 Pour obtenir les \textbf{déformées modales}, on utilise les relations entre les coefficients \begin{math} C_1 \; à \;  C_4 \end{math} du système (15*).
-Ce qui conduit à \begin{math} C_1=-C_3 \end{math} et \begin{math}  C_2 = -C_4 \end{math}.
+Ce qui conduit à \begin{math} C_1=-C_3 (15b*) \end{math} et \begin{math}  C_2 = -C_4 (15a*)\end{math}.
 D'où
 
-\begin{equation} C_3 sin(\beta_n L)  + C_4 cos(\beta_n L)  +  C_3 sinh(\beta_n L)  + C_4 cosh(\beta_n L)  =  0  \end{equation}
+\begin{equation}(15c*) \iff C_3 sin(\beta_n L)  + C_4 cos(\beta_n L)  +  C_3 sinh(\beta_n L)  + C_4 cosh(\beta_n L)  =  0  \end{equation}
 \begin{equation} \iff C_3 (sin + sinh) + C_4 (cos + cosh) = 0  \end{equation}
 \begin{equation} \iff C3 = - \frac{cos + cosh}{sin + sinh}C_4 \end{equation}
 \begin{equation} \iff \boxed{C3 = - \sigma_n C_4} \text{\qquad avec\quad} \sigma_n= \frac{cos(\beta_n L) + cosh(\beta_n L)}{sin(\beta_n L) + sinh(\beta_n L)}\end{equation}
@@ -207,10 +209,10 @@ La fonction de variable \begin{math} x  \end{math} peut alors s'écrire
 
 \begin{equation} 
 	\begin{aligned}
-			 X_n(x) 	&=	C_ n[ (sin(\beta_n x) + sinh(\beta_n x)) - \sigma_n (cos(\beta_n x) + cosh(\beta_n x))] \\
+			 X_n(x) 	&=	C_ n[ (cosh(\beta_n x) - cos(\beta_n x)) - \sigma_n (sinh(\beta_n x) - sin(\beta_n x))] \\
 			  		&=	C_n \phi_n(x) \\
 	\end{aligned}
-\end{equation}
+\end{equation}s
 
 
 En conclusion, l'équation du déplacement est (équation (4*) et (26*)
