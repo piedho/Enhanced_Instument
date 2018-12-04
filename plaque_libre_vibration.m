@@ -22,7 +22,8 @@ k=sqrt(Z/a^2)
 omega=k^2*sqrt(D/rho)
 
 %S=solve(tan(alpha/2)+tanh(alpha/2) == 0,alpha)
-S=3.15729;
+%S=3.15729;
+
 
 %    for t = t : 0.001 : t+0.051
      for t = t : 0.05 : t+1.1
@@ -31,7 +32,7 @@ S=3.15729;
 %             for y = 0 : 0.01 : 0.1
 %                 yindice=y*100+1
 
-[x,y] = meshgrid(0:0.01:0.1)
+[x,y] = meshgrid(0:0.005:0.1)
 %                deplacementvalxy(xindice,yindice)=cos(S*(x/a-1/2))-sin(S/2)/sinh(S/2)*cosh(S*(x/a-1/2))+cos(S*(y/a-1/2))-sin(S/2)/sinh(S/2)*cosh(S*(y/a-1/2))
                 deplacementvalxy=cos(S*(x/a-1/2))-sin(S/2)/sinh(S/2)*cosh(S*(x/a-1/2))+cos(S*(y/a-1/2))-sin(S/2)/sinh(S/2)*cosh(S*(y/a-1/2)) % equation pour les m/n pairs, pour impaires quelques sin remplacent des cos
                 deplacementvalxyt=deplacementvalxy*cos(omega*t);
