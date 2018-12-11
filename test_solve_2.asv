@@ -1,4 +1,0 @@
-%test_solve_2
-syms x
-eqn = tanh(x/2) == -tan(x/2);
-[solx, param, cond] = solve(eqn, x, 'ReturnConditions', true)
