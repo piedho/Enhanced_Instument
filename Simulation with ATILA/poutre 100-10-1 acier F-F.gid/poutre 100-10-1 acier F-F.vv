@@ -1,0 +1,37 @@
+BeginZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\poutre 100-10-1 acier F-F.gid\poutre 100-10-1 acier F-F.vv
+   x -36.985809326171875 136.98580932617188
+   y 60.277080535888672 -50.277080535888672
+   z -165.83123779296875 165.83123779296875
+   e 55.277080535888672
+   v 0.37919662934611398 -0.14530430290744933 -0.22484146085049589
+   r 0.88574425955336633
+   m 0.8566659688949585 0.28810626268386841 -0.42792314291000366 0 -0.50850188732147217 0.61131244897842407 -0.60640162229537964 0 0.086886659264564514 0.7370833158493042 0.6701931357383728 0 0 0 0 1
+   c 50 5 0
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 1
+   DrawingType 0
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\poutre 100-10-1 acier F-F.gid\poutre 100-10-1 acier F-F.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+

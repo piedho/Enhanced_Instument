@@ -1,0 +1,37 @@
+BeginZE C:\Users\pmo\Downloads\plaque SAMBA.gid\plaque SAMBA.vv
+   x -1297.6019287109375 1297.6019287109375
+   y 593.96502685546875 -593.96502685546875
+   z -1781.39501953125 1782.39501953125
+   e 593.96502685546875
+   v 0.4792995542316334 -0.12428199346283426 0.43938173806801872
+   r -0.74951291627735683
+   m 0.58299535512924194 0.53950798511505127 0.60749286413192749 0 -0.77778118848800659 0.15443125367164612 0.6092679500579834 0 0.23488903045654297 -0.82769691944122314 0.50965183973312378 0 0 0 0 1
+   c 0 0 -0.5
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 1
+   DrawingType 1
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:\Users\pmo\Downloads\plaque SAMBA.gid\plaque SAMBA.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+

@@ -1,0 +1,46 @@
+Lookup table for Material Names and Properties
+ (some properties are not printed when equal to zero)
+
+GiD Name   = STEEL1
+ATILA Name = M0001
+
+ Young's Modulus            E =    2.100000E+11 (N/m^2)         - E > 0
+ Poisson ratio             nu =    2.850000E-01                 - -1 < nu < 1/2
+ Density                  rho =    7.800000E+03 (kg/m^3)
+ Bulk Modulus               K =    1.627907E+11 (N/m^2)         - K > 0
+ Shear Modulus              G =    8.171206E+10 (N/m^2)         - G > 0
+ 1st Lam� constant         mu =    8.171206E+10 (N/m^2)         - mu = G
+ 2nd Lam� constant     lambda =    1.083160E+11 (N/m^2)
+ Quality factor             Q =    1.000000E+02 m/s
+ Longitudinal velocity     cL =    4.577315E+03 m/s             - wavelength < 1/5 specimen lateral direction
+ Shear velocity            cS =    3.236650E+03 m/s
+ Loss Modulus              E" =    2.100000E+09 (N/m^2)         - E" > 0
+ Loss Poisson ratio       nu" =    1.000000E-02                 - -E"(1+nu)/E < nu" < (1/2-nu)/E
+
+GiD Name   = PZT4
+ATILA Name = M0002
+
+ Density                      =    7.500000E+03 (kg/m^3)
+ s11E                         =    1.230000E-11 (m^2/N)
+ s12E                         =   -4.050000E-12 (m^2/N)
+ s13E                         =   -5.310000E-12 (m^2/N)
+ s22E                         =    1.230000E-11 (m^2/N)
+ s23E                         =   -5.310000E-12 (m^2/N)
+ s33E                         =    1.550000E-11 (m^2/N)
+ s44E                         =    3.900000E-11 (m^2/N)
+ s55E                         =    3.900000E-11 (m^2/N)
+ s66E                         =    3.270000E-11 (m^2/N)
+ d15                          =    4.960000E-10 (  C/N)
+ d24                          =    4.960000E-10 (  C/N)
+ d31                          =   -1.230000E-10 (  C/N)
+ d32                          =   -1.230000E-10 (  C/N)
+ d33                          =    2.890000E-10 (  C/N)
+ E11T/E0                      =    1.475000E+03 
+ E22T/E0                      =    1.475000E+03 
+ E33T/E0                      =    1.300000E+03 
+ E11S                         =    6.751859E-09 (F/m)
+ E22S                         =    6.751859E-09 (F/m)
+ E33S                         =    5.872350E-09 (F/m)
+ Mechanical losses            =    2.000000E-03 
+ Dielectric losses            =    4.000000E-03 
+

@@ -1,0 +1,179 @@
+PROBLEM DATA
+TITLE: Problem_Data
+QUESTION: PRINTING#CB#(0,1,2,3,4)
+VALUE: 0
+DEPENDENCIES: (0,RESTORE,PRINTING,0)
+HELP: Amount of information printed (0 = less; 4 = more)
+QUESTION: PRECISION#CB#(SINGLE,DOUBLE)
+VALUE: DOUBLE
+DEPENDENCIES: (DOUBLE,HIDE,PRECISION,DOUBLE)
+QUESTION: GEOMETRY#CB#(2D,3D)
+VALUE: 3D
+HELP: 2D or 3D problem
+DEPENDENCIES: (2D,RESTORE,CLASS,#CURRENT#,HIDE,Incident_Pressure,No)
+DEPENDENCIES: (3D,HIDE,CLASS,#CURRENT#,HIDE,Incident_Pressure,No)
+QUESTION: CLASS#CB#(AXISYMMETRIC,PLSTRESS,PLSTRAIN)
+VALUE: PLSTRAIN
+HELP: Class of 2D problem (axisymmetrical, plane stress, plane strain, or propagation)
+QUESTION: Incident_Pressure#CB#(Yes,No)
+VALUE: No
+HELP: The flooded structure is subjected to an impinging harmonic wave defined in the external function INCPRE.
+QUESTION: ANALYSIS#CB#(STATIC,MODAL,MODAL_RESANTIRES,HARMONIC,TRANSIENT)
+VALUE: MODAL
+HELP: Type of analysis
+DEPENDENCIES: (STATIC,HIDE,Number_of_modes,#CURRENT#,HIDE,Is_using_Sysnoise_coupling,No,RESTORE,Write_strain,#CURRENT#,RESTORE,Write_stress,#CURRENT#,HIDE,Include_losses,No,HIDE,Number_of_time_steps,#CURRENT#,HIDE,Integration_method,#CURRENT#,HIDE,NS,#CURRENT#,HIDE,NSKIP,#CURRENT#,HIDE,Delta_t,#CURRENT#,HIDE,FL,#CURRENT#,HIDE,Amplitude_decay_factor,#CURRENT#,HIDE,Incident_Pressure,#CURRENT#,HIDE,Eigenvalue_Shift,#CURRENT#,RESTORE,Thermal,#CURRENT#,HIDE,Incident_Plane_Wave,No)
+DEPENDENCIES: (MODAL,RESTORE,Number_of_modes,#CURRENT#,HIDE,Is_using_Sysnoise_coupling,#CURRENT#,HIDE,Write_strain,#CURRENT#,HIDE,Write_stress,#CURRENT#,HIDE,Include_losses,No,HIDE,Number_of_time_steps,#CURRENT#,HIDE,Integration_method,#CURRENT#,HIDE,NS,#CURRENT#,HIDE,NSKIP,#CURRENT#,HIDE,Delta_t,#CURRENT#,HIDE,FL,#CURRENT#,HIDE,Amplitude_decay_factor,#CURRENT#,HIDE,Incident_Pressure,#CURRENT#,RESTORE,Eigenvalue_Shift,#CURRENT#,HIDE,Thermal,No,HIDE,Incident_Plane_Wave,No)
+DEPENDENCIES: (MODAL_RESANTIRES,RESTORE,Number_of_modes,#CURRENT#,HIDE,Is_using_Sysnoise_coupling,#CURRENT#,HIDE,Write_strain,#CURRENT#,HIDE,Write_stress,#CURRENT#,HIDE,Include_losses,No,HIDE,Number_of_time_steps,#CURRENT#,HIDE,Integration_method,#CURRENT#,HIDE,NS,#CURRENT#,HIDE,NSKIP,#CURRENT#,HIDE,Delta_t,#CURRENT#,HIDE,FL,#CURRENT#,HIDE,Amplitude_decay_factor,#CURRENT#,HIDE,Incident_Pressure,#CURRENT#,RESTORE,Eigenvalue_Shift,#CURRENT#,HIDE,Thermal,No,HIDE,Incident_Plane_Wave,No)
+DEPENDENCIES: (HARMONIC,HIDE,Number_of_modes,#CURRENT#,RESTORE,Is_using_Sysnoise_coupling,#CURRENT#,RESTORE,Write_strain,#CURRENT#,RESTORE,Write_stress,#CURRENT#,RESTORE,Include_losses,#CURRENT#,HIDE,Number_of_time_steps,#CURRENT#,HIDE,Integration_method,#CURRENT#,HIDE,NS,#CURRENT#,HIDE,NSKIP,#CURRENT#,HIDE,Delta_t,#CURRENT#,HIDE,FL,#CURRENT#,HIDE,Amplitude_decay_factor,#CURRENT#,HIDE,Incident_Pressure,#CURRENT#,HIDE,Eigenvalue_Shift,#CURRENT#,RESTORE,Thermal,#CURRENT#,RESTORE,Incident_Plane_Wave,#CURRENT#)
+DEPENDENCIES: (TRANSIENT,HIDE,Number_of_modes,#CURRENT#,RESTORE,Write_strain,#CURRENT#,RESTORE,Write_stress,#CURRENT#,RESTORE,Include_losses,#CURRENT#,RESTORE,Number_of_time_steps,#CURRENT#,RESTORE,Integration_method,#CURRENT#,RESTORE,NS,#CURRENT#,RESTORE,NSKIP,#CURRENT#,RESTORE,Delta_t,#CURRENT#,RESTORE,FL,#CURRENT#,RESTORE,Amplitude_decay_factor,#CURRENT#,HIDE,Incident_Pressure,#CURRENT#,HIDE,Eigenvalue_Shift,#CURRENT#,HIDE,Is_using_Sysnoise_coupling,#CURRENT#,HIDE,Thermal,No,HIDE,Incident_Plane_Wave,No)
+QUESTION: Number_of_modes
+VALUE: 10
+HELP: Number of eigenvalues computed by the modal analysis
+QUESTION: Eigenvalue_Shift
+VALUE: 3
+HELP: Frequency shift for eigenvalue solver
+QUESTION: Incident_Plane_Wave#CB#(Yes,No)
+VALUE: No
+HELP: Incident Plane Wave
+DEPENDENCIES: (Yes,RESTORE,Pressure,#CURRENT#,RESTORE,Wave_Amplitude,#CURRENT#,RESTORE,Angle_xOy,#CURRENT#,RESTORE,Angle__xOy_Oz,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Pressure,#CURRENT#,HIDE,Wave_Amplitude,#CURRENT#,HIDE,Angle_xOy,#CURRENT#,HIDE,Angle__xOy_Oz,#CURRENT#)
+QUESTION: Pressure#CB#(TOTAL,SCATTERED)
+VALUE: TOTAL
+HELP: Pressure calculation
+QUESTION: Wave_Amplitude
+VALUE: 0.
+HELP: Wave amplitude
+QUESTION: Angle_xOy
+VALUE: 0.
+HELP: Angle_xOy (°)
+QUESTION: Angle__xOy_Oz
+VALUE: 0.
+HELP: Angle_xOy_Oz (°)
+QUESTION: Is_using_Sysnoise_coupling#CB#(No,Yes)
+VALUE: No
+HELP: Is using Sysnoise (coupling BEM)
+DEPENDENCIES: (Yes,RESTORE,Number_of_eigenvalues_for_the_modal_decomposition,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Number_of_eigenvalues_for_the_modal_decomposition,#CURRENT#)
+QUESTION: Number_of_eigenvalues_for_the_modal_decomposition
+VALUE: 10
+HELP: Number of eigenvalues computed by the modal solver for BEM_FEM coupling
+QUESTION: Number_of_time_steps
+VALUE: 10
+HELP: Number of time steps in the transient analysis
+QUESTION: Include_losses#CB#(Yes,No)
+VALUE: No
+HELP: Take material losses into account
+QUESTION: Integration_method#CB#(NEWMARK)
+VALUE: NEWMARK
+QUESTION: NS
+VALUE: 1
+HELP: Number of steps between each saved step
+QUESTION: NSKIP
+VALUE: 0
+HELP: Number of steps skipped before starting to save steps
+QUESTION: Delta_t
+VALUE: 1
+HELP: Time step (seconds)
+QUESTION: FL
+VALUE: 1
+HELP: Frequency at which material losses are considered (Hz)
+QUESTION: Amplitude_decay_factor
+VALUE: 0.005
+HELP: Amplitude decay factor
+QUESTION: Write_strain#CB#(Yes,No)
+VALUE: No
+HELP: Write Strain for postprocessing
+QUESTION: Write_stress#CB#(Yes,No)
+VALUE: No
+HELP: Write Stress for postprocessing
+QUESTION: Thermal#CB#(Yes,No)
+VALUE: No
+HELP: Thermal calculation
+DEPENDENCIES: (Yes,RESTORE,Is_Ambient_Temperature_Defined,#CURRENT#,RESTORE,Is_Working_Temperature_Defined,#CURRENT#,RESTORE,Thermal_Non_Linear,No,RESTORE,Thermal_Displacement_Calculation,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Is_Ambient_Temperature_Defined,No,HIDE,Is_Working_Temperature_Defined,No,HIDE,Thermal_Non_Linear,No,HIDE,Thermal_Displacement_Calculation,No)
+QUESTION: Is_Ambient_Temperature_Defined#CB#(Yes,No)
+VALUE: No
+HELP: Is the ambient temperature should be defined ?
+DEPENDENCIES: (Yes,RESTORE,Ambient_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Ambient_Temperature,#CURRENT#)
+QUESTION: Ambient_Temperature
+VALUE: 0.
+HELP: The ambient temperature
+QUESTION: Is_Working_Temperature_Defined#CB#(Yes,No)
+VALUE: No
+HELP: Is a working temperature should be defined ?
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 20.
+HELP: The Working temperature
+QUESTION: Thermal_Displacement_Calculation#CB#(Yes,No)
+VALUE: No
+HELP: Thermal displacement calculation
+DEPENDENCIES: (Yes,RESTORE,Initial_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Initial_Temperature,#CURRENT#)
+QUESTION: Initial_Temperature#CB#(0,10,20)
+VALUE: 20
+HELP: Initial temperature of the structure
+QUESTION: Thermal_Non_Linear#CB#(Yes,No)
+VALUE: No
+HELP: Non linear thermal calculation
+DEPENDENCIES: (Yes,RESTORE,Max_number_of_nonlinear_iterations,#CURRENT#,RESTORE,Tolerance_maximum,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Max_number_of_nonlinear_iterations,#CURRENT#,HIDE,Tolerance_maximum,#CURRENT#)
+QUESTION: Max_number_of_nonlinear_iterations
+VALUE: 5
+HELP: The maximum number of nonlinear iterations
+QUESTION: Tolerance_maximum
+VALUE: 1.E-08
+HELP: The maximum tolerance for convergence
+TITLE: Mesh_Units
+QUESTION: MESH_UNITS:#CB#(m,mm,µm,nm,ft,in,mil)
+VALUE: mm
+HELP: Unit size for the mesh
+TITLE: Symmetries
+QUESTION: Plane_of_Symmetry_YoZ#CB#(No,Displacements,Displacements_and_Electric_field)
+VALUE: No
+HELP: Clamps the YoZ in the X direction
+QUESTION: Plane_of_Symmetry_ZoX#CB#(No,Displacements,Displacements_and_Electric_field)
+VALUE: No
+HELP: Clamps the ZoX in the Y direction
+QUESTION: Plane_of_Symmetry_XoY#CB#(No,Displacements,Displacements_and_Electric_field)
+VALUE: No
+HELP: Clamps the XoY in the Z direction
+IMAGE: Planes_of_Symmetry.jpg
+TITLE: Tools
+QUESTION: Out_Of_Core_Solving#CB#(Yes,No)
+VALUE: No
+HELP: Smart use of hard disk to extend RAM memory for solving system of equations
+DEPENDENCIES: (Yes,RESTORE,Maximum_RAM_Memory_Allocated,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Maximum_RAM_Memory_Allocated,#CURRENT#)
+QUESTION: Maximum_RAM_Memory_Allocated
+VALUE: 2000
+HELP: The amount of RAM memory in Mb to be used (must be lower than the full available RAM memory)
+QUESTION: Write_Far_field_Pressure#CB#(No,Yes)
+VALUE: No
+HELP: Write the far field Pressure
+END PROBLEM DATA
+INTERVAL DATA
+QUESTION: TYPE#CB#(SINGLE_FREQUENCY,LINEAR_DISTRIBUTION,LOGARITHMIC_DISTRIBUTION)
+VALUE: SINGLE_FREQUENCY
+HELP: Single frequency in this interval
+DEPENDENCIES: (SINGLE_FREQUENCY,RESTORE,FREQUENCY,#CURRENT#,HIDE,MIN_FREQUENCY,#CURRENT#,HIDE,MAX_FREQUENCY,#CURRENT#,HIDE,NUMBER_OF_FREQUENCIES,#CURRENT#,HIDE,WEIGHT,#CURRENT#)
+DEPENDENCIES: (LINEAR_DISTRIBUTION,HIDE,FREQUENCY,#CURRENT#,RESTORE,MIN_FREQUENCY,#CURRENT#,RESTORE,MAX_FREQUENCY,#CURRENT#,RESTORE,NUMBER_OF_FREQUENCIES,#CURRENT#,HIDE,WEIGHT,#CURRENT#)
+DEPENDENCIES: (LOGARITHMIC_DISTRIBUTION,HIDE,FREQUENCY,#CURRENT#,RESTORE,MIN_FREQUENCY,#CURRENT#,RESTORE,MAX_FREQUENCY,#CURRENT#,RESTORE,NUMBER_OF_FREQUENCIES,#CURRENT#,RESTORE,WEIGHT,#CURRENT#)
+QUESTION: FREQUENCY
+VALUE: 1000.
+HELP: Frequency (Hz)
+QUESTION: MIN_FREQUENCY
+VALUE: 1000.
+HELP: Minimum frequency of the interval (Hz)
+QUESTION: MAX_FREQUENCY
+VALUE: 1000.
+HELP: Maximum frequency of the interval (Hz)
+QUESTION: NUMBER_OF_FREQUENCIES
+VALUE: 1
+HELP: Number of frequencies in the interval
+QUESTION: WEIGHT
+VALUE: 1
+HELP: Weight of the logarithmic distribution
+END INTERVAL DATA

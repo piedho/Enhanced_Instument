@@ -1,0 +1,2754 @@
+BOOK:Elastic
+NUMBER: 1 MATERIAL: STEEL1
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 7800
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 2.1e09
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0.01
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 75
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 2 MATERIAL: STEEL2
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 215e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 7900
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 3 MATERIAL: ALUMINUM1
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 71.4e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.344
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 2780
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 1.4e09
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0.01
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 900
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 238
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 4 MATERIAL: ALUMINUM2
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 75e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.340
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 2780
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 5 MATERIAL: TITANIUM
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 108e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.361
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 4500
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 6 MATERIAL: BRASS
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 92e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 8270
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 380
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 109
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 7 MATERIAL: COPPER
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 117e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 8360
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus (N/m^2)
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 8 MATERIAL: TUNGSTEN
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 342e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.26
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 17470
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 9 MATERIAL: CORO_MECH
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 71.4e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 7150
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 10 MATERIAL: REC
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 190e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 8200
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 11 MATERIAL: PLASTIC
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 4.1e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.4
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 1400
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 12 MATERIAL: EPOXY
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 4.6e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.37
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 1177
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 92e9
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: -0.03
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 13 MATERIAL: RUBBER
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 10E9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.45
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 1100
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 1e09
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0.04
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1400
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 0.05
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 14 MATERIAL: POLYMER
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 1.3e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.33
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 1000
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 0
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+NUMBER: 15 MATERIAL: CUPRONICKEL
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC)
+VALUE: ELASTIC
+DEPENDENCIES: (ELASTIC,HIDE,TYPE,ELASTIC)
+QUESTION: Young's_Modulus
+VALUE: 170e9
+HELP: Young's modulus (N/m^2)
+QUESTION: Poisson_Ratio
+VALUE: 0.29
+HELP: Poisson ratio
+QUESTION: Density
+VALUE: 8840
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: E"
+VALUE: 3.4e09
+HELP: Imaginary part of the complex Young's modulus
+QUESTION: NU"
+VALUE: 0.04
+HELP: Imaginary part of the complex Poisson ratio
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 380
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 394
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+TITLE: Pre-stress
+QUESTION: Enable_PRE_STRESS#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,PRE_STRESS,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,PRE_STRESS,#CURRENT#)
+HELP: Enable computation of Pre-Stress along the Y-axis.
+QUESTION: PRE_STRESS
+VALUE: 1
+HELP: Pre-Stress value along the Y-axis (Pascal).
+END MATERIAL
+BOOK:Piezoelectric
+NUMBER: 16 MATERIAL: PZT4
+TITLE: General
+QUESTION: SYMMETRY_CLASS#CB#(Triclinic_System_Class_1,Monoclinic_System_Class_2,Monoclinic_System_Class_m,Orthorhombic_System_Class_222,Orthorhombic_System_Class_mm2,Tetragonal_System_Class_4,Tetragonal_System_Class_4o,Tetragonal_System_Class_422,Tetragonal_System_Class_4mm,Tetragonal_System_Class_4o2m,Trigonal_System_Class_3,Trigonal_System_Class_32,Trigonal_System_Class_3m,Hexagonal_System_Class_6,Hexagonal_System_Class_6o,Hexagonal_System_Class_622,Hexagonal_System_Class_6mm,Hexagonal_System_Class_6om2,Cubic_System_Classes_23_and_4o3m)
+VALUE: Hexagonal_System_Class_6mm
+DEPENDENCIES: (Triclinic_System_Class_1,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,RESTORE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,RESTORE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,RESTORE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,RESTORE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,RESTORE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,RESTORE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,RESTORE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,RESTORE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_222,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_mm2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_422,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o2m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_32,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_622,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6om2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Cubic_System_Classes_23_and_4o3m,RESTORE,s11E,#CURRENT#,HIDE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,HIDE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,HIDE,E33T/E0,#CURRENT#)
+HELP: Crystal symmetry class
+QUESTION: DENSITY
+VALUE: 7500
+HELP: Density (kg/m^3)
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZOELECTRIC)
+VALUE: PIEZOELECTRIC
+DEPENDENCIES: (PIEZOELECTRIC,HIDE,TYPE,PIEZOELECTRIC)
+QUESTION: s11E
+VALUE: 12.3E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s12E
+VALUE: -4.05E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s13E
+VALUE: -5.31E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s14E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s15E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s16E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s22E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s23E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s24E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s25E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s26E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s33E
+VALUE: 15.5E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s34E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s35E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s36E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s44E
+VALUE: 39.0E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s45E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s46E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s55E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s56E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s66E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+TITLE: Coupling
+QUESTION: d11
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d12
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d13
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d14
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d15
+VALUE: 496e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d16
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d21
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d22
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d23
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d24
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d25
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d26
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d31
+VALUE: -123e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d32
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d33
+VALUE: 289e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d34
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d35
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d36
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+TITLE: Dielectric
+QUESTION: E11T/E0
+VALUE: 1475
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E12T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E13T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E22T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E23T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E33T/E0
+VALUE: 1300
+HELP: Relative dielectric permittivity at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.002
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.004
+HELP: Dielectric loss angle
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#,HIDE,Temperature_Dependent,No)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#,RESTORE,Temperature_Dependent,No)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+QUESTION: Temperature_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is temperature dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#,HIDE,is_working_Temperature_Defined,No)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#,RESTORE,is_working_Temperature_Defined,No)
+QUESTION: Is_working_Temperature_Defined#CB#(No,Yes)
+VALUE: No
+HELP: Working temperature
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 0.
+HELP: The working temperature
+QUESTION: Phase_change_temperature
+VALUE: 0.0
+HELP: The temperature at phase change
+QUESTION: Elastic_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Losses_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Losses factor dependency
+IMAGE: non_linear.gif
+TITLE: Non-Linear
+QUESTION: Stress_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is stress dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_stress,#CURRENT#,HIDE,Piezoelectric_coefficient_with_stress,#CURRENT#,HIDE,Dielectric_coefficient_with_stress,#CURRENT#,HIDE,Pre-Stress,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_stress,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_stress,#CURRENT#,RESTORE,Dielectric_coefficient_with_stress,#CURRENT#,RESTORE,Pre-Stress,#CURRENT#)
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Pre-stress
+VALUE: 0.0
+HELP: Magnitude of pre-Stress
+QUESTION: Elastic_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+IMAGE: non_linear.gif
+END MATERIAL
+NUMBER: 17 MATERIAL: PZT5A
+TITLE: General
+QUESTION: SYMMETRY_CLASS#CB#(Triclinic_System_Class_1,Monoclinic_System_Class_2,Monoclinic_System_Class_m,Orthorhombic_System_Class_222,Orthorhombic_System_Class_mm2,Tetragonal_System_Class_4,Tetragonal_System_Class_4o,Tetragonal_System_Class_422,Tetragonal_System_Class_4mm,Tetragonal_System_Class_4o2m,Trigonal_System_Class_3,Trigonal_System_Class_32,Trigonal_System_Class_3m,Hexagonal_System_Class_6,Hexagonal_System_Class_6o,Hexagonal_System_Class_622,Hexagonal_System_Class_6mm,Hexagonal_System_Class_6om2,Cubic_System_Classes_23_and_4o3m)
+VALUE: Hexagonal_System_Class_6mm
+DEPENDENCIES: (Triclinic_System_Class_1,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,RESTORE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,RESTORE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,RESTORE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,RESTORE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,RESTORE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,RESTORE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,RESTORE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,RESTORE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_222,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_mm2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_422,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o2m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_32,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_622,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6om2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Cubic_System_Classes_23_and_4o3m,RESTORE,s11E,#CURRENT#,HIDE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,HIDE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,HIDE,E33T/E0,#CURRENT#)
+HELP: Crystal symmetry class
+QUESTION: DENSITY
+VALUE: 7750
+HELP: Density (kg/m^3)
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZOELECTRIC)
+VALUE: PIEZOELECTRIC
+DEPENDENCIES: (PIEZOELECTRIC,HIDE,TYPE,PIEZOELECTRIC)
+QUESTION: s11E
+VALUE: 16.4E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s12E
+VALUE: -5.74E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s13E
+VALUE: -7.22E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s14E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s15E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s16E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s22E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s23E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s24E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s25E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s26E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s33E
+VALUE: 18.8E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s34E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s35E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s36E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s44E
+VALUE: 47.5E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s45E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s46E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s55E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s56E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s66E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+TITLE: Coupling
+QUESTION: d11
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d12
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d13
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d14
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d15
+VALUE: 584e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d16
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d21
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d22
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d23
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d24
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d25
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d26
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d31
+VALUE: -171e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d32
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d33
+VALUE: 374e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d34
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d35
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d36
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+TITLE: Dielectric
+QUESTION: E11T/E0
+VALUE: 1730
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E12T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E13T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E22T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E23T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E33T/E0
+VALUE: 1700
+HELP: Relative dielectric permittivity at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.013
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.02
+HELP: Dielectric loss angle
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#,HIDE,Temperature_Dependent,No)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#,RESTORE,Temperature_Dependent,No)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+QUESTION: Temperature_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is temperature dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#,HIDE,is_working_Temperature_Defined,No)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#,RESTORE,is_working_Temperature_Defined,No)
+QUESTION: Is_working_Temperature_Defined#CB#(No,Yes)
+VALUE: No
+HELP: Working temperature
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 0.
+HELP: The working temperature
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#)
+QUESTION: Phase_change_temperature
+VALUE: 0.0
+HELP: The temperature at phase change
+QUESTION: Elastic_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Losses_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Losses factor dependency
+IMAGE: non_linear.gif
+TITLE: Non-Linear
+QUESTION: Stress_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is stress dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_stress,#CURRENT#,HIDE,Piezoelectric_coefficient_with_stress,#CURRENT#,HIDE,Dielectric_coefficient_with_stress,#CURRENT#,HIDE,Pre-Stress,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_stress,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_stress,#CURRENT#,RESTORE,Dielectric_coefficient_with_stress,#CURRENT#,RESTORE,Pre-Stress,#CURRENT#)
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Pre-stress
+VALUE: 0.0
+HELP: Magnitude of pre-Stress
+QUESTION: Elastic_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+IMAGE: non_linear.gif
+END MATERIAL
+NUMBER: 18 MATERIAL: PZT5AH
+TITLE: General
+QUESTION: SYMMETRY_CLASS#CB#(Triclinic_System_Class_1,Monoclinic_System_Class_2,Monoclinic_System_Class_m,Orthorhombic_System_Class_222,Orthorhombic_System_Class_mm2,Tetragonal_System_Class_4,Tetragonal_System_Class_4o,Tetragonal_System_Class_422,Tetragonal_System_Class_4mm,Tetragonal_System_Class_4o2m,Trigonal_System_Class_3,Trigonal_System_Class_32,Trigonal_System_Class_3m,Hexagonal_System_Class_6,Hexagonal_System_Class_6o,Hexagonal_System_Class_622,Hexagonal_System_Class_6mm,Hexagonal_System_Class_6om2,Cubic_System_Classes_23_and_4o3m)
+VALUE: Hexagonal_System_Class_6mm
+DEPENDENCIES: (Triclinic_System_Class_1,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,RESTORE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,RESTORE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,RESTORE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,RESTORE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,RESTORE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,RESTORE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,RESTORE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,RESTORE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_222,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_mm2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_422,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o2m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_32,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_622,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6om2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Cubic_System_Classes_23_and_4o3m,RESTORE,s11E,#CURRENT#,HIDE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,HIDE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,HIDE,E33T/E0,#CURRENT#)
+HELP: Crystal symmetry class
+QUESTION: DENSITY
+VALUE: 7500
+HELP: Density (kg/m^3)
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZOELECTRIC)
+VALUE: PIEZOELECTRIC
+DEPENDENCIES: (PIEZOELECTRIC,HIDE,TYPE,PIEZOELECTRIC)
+QUESTION: s11E
+VALUE: 16.4E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s12E
+VALUE: -4.7E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s13E
+VALUE: -7.22E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s14E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s15E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s16E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s22E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s23E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s24E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s25E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s26E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s33E
+VALUE: 20.8E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s34E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s35E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s36E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s44E
+VALUE: 47.5E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s45E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s46E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s55E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s56E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s66E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+TITLE: Coupling
+QUESTION: d11
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d12
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d13
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d14
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d15
+VALUE: 741e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d16
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d21
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d22
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d23
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d24
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d25
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d26
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d31
+VALUE: -274e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d32
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d33
+VALUE: 593e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d34
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d35
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d36
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+TITLE: Dielectric
+QUESTION: E11T/E0
+VALUE: 3030
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E12T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E13T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E22T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E23T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E33T/E0
+VALUE: 3630
+HELP: Relative dielectric permittivity at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.013
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.02
+HELP: Dielectric loss angle
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#,HIDE,Temperature_Dependent,No)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#,RESTORE,Temperature_Dependent,No)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+QUESTION: Temperature_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is temperature dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#,HIDE,is_working_Temperature_Defined,No)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#,RESTORE,is_working_Temperature_Defined,No)
+QUESTION: Is_working_Temperature_Defined#CB#(No,Yes)
+VALUE: No
+HELP: Working temperature
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 0.
+HELP: The working temperature
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#)
+QUESTION: Phase_change_temperature
+VALUE: 0.0
+HELP: The temperature at phase change
+QUESTION: Elastic_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Losses_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Losses factor dependency
+IMAGE: non_linear.gif
+TITLE: Non-Linear
+QUESTION: Stress_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is stress dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_stress,#CURRENT#,HIDE,Piezoelectric_coefficient_with_stress,#CURRENT#,HIDE,Dielectric_coefficient_with_stress,#CURRENT#,HIDE,Pre-Stress,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_stress,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_stress,#CURRENT#,RESTORE,Dielectric_coefficient_with_stress,#CURRENT#,RESTORE,Pre-Stress,#CURRENT#)
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Pre-stress
+VALUE: 0.0
+HELP: Magnitude of pre-Stress
+QUESTION: Elastic_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+IMAGE: non_linear.gif
+END MATERIAL
+NUMBER: 19 MATERIAL: PZT8
+TITLE: General
+QUESTION: SYMMETRY_CLASS#CB#(Triclinic_System_Class_1,Monoclinic_System_Class_2,Monoclinic_System_Class_m,Orthorhombic_System_Class_222,Orthorhombic_System_Class_mm2,Tetragonal_System_Class_4,Tetragonal_System_Class_4o,Tetragonal_System_Class_422,Tetragonal_System_Class_4mm,Tetragonal_System_Class_4o2m,Trigonal_System_Class_3,Trigonal_System_Class_32,Trigonal_System_Class_3m,Hexagonal_System_Class_6,Hexagonal_System_Class_6o,Hexagonal_System_Class_622,Hexagonal_System_Class_6mm,Hexagonal_System_Class_6om2,Cubic_System_Classes_23_and_4o3m)
+VALUE: Hexagonal_System_Class_6mm
+DEPENDENCIES: (Triclinic_System_Class_1,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,RESTORE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,RESTORE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,RESTORE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,RESTORE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,RESTORE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,RESTORE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,RESTORE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,RESTORE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_222,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_mm2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_422,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o2m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_32,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_622,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6om2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Cubic_System_Classes_23_and_4o3m,RESTORE,s11E,#CURRENT#,HIDE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,HIDE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,HIDE,E33T/E0,#CURRENT#)
+HELP: Crystal symmetry class
+QUESTION: DENSITY
+VALUE: 7600
+HELP: Density (kg/m^3)
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZOELECTRIC)
+VALUE: PIEZOELECTRIC
+DEPENDENCIES: (PIEZOELECTRIC,HIDE,TYPE,PIEZOELECTRIC)
+QUESTION: s11E
+VALUE: 11.1E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s12E
+VALUE: -3.7E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s13E
+VALUE: -4.8E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s14E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s15E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s16E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s22E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s23E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s24E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s25E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s26E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s33E
+VALUE: 13.9E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s34E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s35E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s36E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s44E
+VALUE: 35.0E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s45E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s46E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s55E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s56E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s66E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+TITLE: Coupling
+QUESTION: d11
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d12
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d13
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d14
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d15
+VALUE: 400e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d16
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d21
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d22
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d23
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d24
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d25
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d26
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d31
+VALUE: -93e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d32
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d33
+VALUE: 218e-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d34
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d35
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d36
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+TITLE: Dielectric
+QUESTION: E11T/E0
+VALUE: 1100
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E12T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E13T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E22T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E23T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E33T/E0
+VALUE: 1000
+HELP: Relative dielectric permittivity at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.001
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.004
+HELP: Dielectric loss angle
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#,HIDE,Temperature_Dependent,No)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#,RESTORE,Temperature_Dependent,No)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+QUESTION: Temperature_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is temperature dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#,HIDE,is_working_Temperature_Defined,No)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#,RESTORE,is_working_Temperature_Defined,No)
+QUESTION: Is_working_Temperature_Defined#CB#(No,Yes)
+VALUE: No
+HELP: Working temperature
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 0.
+HELP: The working temperature
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#)
+QUESTION: Phase_change_temperature
+VALUE: 0.0
+HELP: The temperature at phase change
+QUESTION: Elastic_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Losses_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Losses factor dependency
+IMAGE: non_linear.gif
+TITLE: Non-Linear
+QUESTION: Stress_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is stress dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_stress,#CURRENT#,HIDE,Piezoelectric_coefficient_with_stress,#CURRENT#,HIDE,Dielectric_coefficient_with_stress,#CURRENT#,HIDE,Pre-Stress,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_stress,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_stress,#CURRENT#,RESTORE,Dielectric_coefficient_with_stress,#CURRENT#,RESTORE,Pre-Stress,#CURRENT#)
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Pre-stress
+VALUE: 0.0
+HELP: Magnitude of pre-Stress
+QUESTION: Elastic_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+IMAGE: non_linear.gif
+END MATERIAL
+NUMBER: 20 MATERIAL: QUARTZ
+TITLE: General
+QUESTION: SYMMETRY_CLASS#CB#(Triclinic_System_Class_1,Monoclinic_System_Class_2,Monoclinic_System_Class_m,Orthorhombic_System_Class_222,Orthorhombic_System_Class_mm2,Tetragonal_System_Class_4,Tetragonal_System_Class_4o,Tetragonal_System_Class_422,Tetragonal_System_Class_4mm,Tetragonal_System_Class_4o2m,Trigonal_System_Class_3,Trigonal_System_Class_32,Trigonal_System_Class_3m,Hexagonal_System_Class_6,Hexagonal_System_Class_6o,Hexagonal_System_Class_622,Hexagonal_System_Class_6mm,Hexagonal_System_Class_6om2,Cubic_System_Classes_23_and_4o3m)
+VALUE: Trigonal_System_Class_32
+DEPENDENCIES: (Triclinic_System_Class_1,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,RESTORE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,RESTORE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,RESTORE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,RESTORE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,RESTORE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,RESTORE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,RESTORE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,RESTORE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,RESTORE,d16,#CURRENT#,RESTORE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,RESTORE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,RESTORE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Monoclinic_System_Class_m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,RESTORE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,RESTORE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,RESTORE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,RESTORE,d12,#CURRENT#,RESTORE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,RESTORE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,RESTORE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,RESTORE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_222,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,RESTORE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Orthorhombic_System_Class_mm2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,RESTORE,s22E,#CURRENT#,RESTORE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,RESTORE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,RESTORE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,RESTORE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,RESTORE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_422,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Tetragonal_System_Class_4o2m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,RESTORE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,RESTORE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,RESTORE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,RESTORE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_32,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Trigonal_System_Class_3m,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,RESTORE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6o,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,RESTORE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_622,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6mm,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,RESTORE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,RESTORE,d31,#CURRENT#,HIDE,d32,#CURRENT#,RESTORE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Hexagonal_System_Class_6om2,RESTORE,s11E,#CURRENT#,RESTORE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,RESTORE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,HIDE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,RESTORE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,RESTORE,E33T/E0,#CURRENT#)
+DEPENDENCIES: (Cubic_System_Classes_23_and_4o3m,RESTORE,s11E,#CURRENT#,HIDE,s12E,#CURRENT#,RESTORE,s13E,#CURRENT#,HIDE,s14E,#CURRENT#,HIDE,s15E,#CURRENT#,HIDE,s16E,#CURRENT#,HIDE,s22E,#CURRENT#,HIDE,s23E,#CURRENT#,HIDE,s24E,#CURRENT#,HIDE,s25E,#CURRENT#,HIDE,s26E,#CURRENT#,HIDE,s33E,#CURRENT#,HIDE,s34E,#CURRENT#,HIDE,s35E,#CURRENT#,HIDE,s36E,#CURRENT#,RESTORE,s44E,#CURRENT#,HIDE,s45E,#CURRENT#,HIDE,s46E,#CURRENT#,HIDE,s55E,#CURRENT#,HIDE,s56E,#CURRENT#,HIDE,s66E,#CURRENT#,HIDE,d11,#CURRENT#,HIDE,d12,#CURRENT#,HIDE,d13,#CURRENT#,RESTORE,d14,#CURRENT#,HIDE,d15,#CURRENT#,HIDE,d16,#CURRENT#,HIDE,d21,#CURRENT#,HIDE,d22,#CURRENT#,HIDE,d23,#CURRENT#,HIDE,d24,#CURRENT#,HIDE,d25,#CURRENT#,HIDE,d26,#CURRENT#,HIDE,d31,#CURRENT#,HIDE,d32,#CURRENT#,HIDE,d33,#CURRENT#,HIDE,d34,#CURRENT#,HIDE,d35,#CURRENT#,HIDE,d36,#CURRENT#,RESTORE,E11T/E0,#CURRENT#,HIDE,E12T/E0,#CURRENT#,HIDE,E13T/E0,#CURRENT#,HIDE,E22T/E0,#CURRENT#,HIDE,E23T/E0,#CURRENT#,HIDE,E33T/E0,#CURRENT#)
+HELP: Crystal symmetry class
+QUESTION: DENSITY
+VALUE: 2648.5
+HELP: Density (kg/m^3)
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZOELECTRIC)
+VALUE: PIEZOELECTRIC
+DEPENDENCIES: (PIEZOELECTRIC,HIDE,TYPE,PIEZOELECTRIC)
+QUESTION: s11E
+VALUE: 12.77E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s12E
+VALUE: -1.79E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s13E
+VALUE: -1.22E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s14E
+VALUE: 4.50E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s15E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s16E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s22E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s23E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s24E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s25E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s26E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s33E
+VALUE: 9.6E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s34E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s35E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s36E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s44E
+VALUE: 20.04E-12
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s45E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s46E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s55E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s56E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+QUESTION: s66E
+VALUE: 0.0
+HELP: Mechanical compliance at constant electric field (m^2/N)
+TITLE: Coupling
+QUESTION: d11
+VALUE: 2.3E-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d12
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d13
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d14
+VALUE: 0.727E-12
+HELP: Piezoelectric constant (C/N)
+QUESTION: d15
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d16
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d21
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d22
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d23
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d24
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d25
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d26
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d31
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d32
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d33
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d34
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d35
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+QUESTION: d36
+VALUE: 0.0
+HELP: Piezoelectric constant (C/N)
+TITLE: Dielectric
+QUESTION: E11T/E0
+VALUE: 4.52
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E12T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E13T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E22T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E23T/E0
+VALUE: 0.0
+HELP: Relative dielectric permittivity at constant stress
+QUESTION: E33T/E0
+VALUE: 4.68
+HELP: Relative dielectric permittivity at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.
+HELP: Dielectric loss angle
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#,HIDE,Temperature_Dependent,No)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#,RESTORE,Temperature_Dependent,No)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 450
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+QUESTION: Temperature_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is temperature dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#,HIDE,is_working_Temperature_Defined,No)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#,RESTORE,is_working_Temperature_Defined,No)
+QUESTION: Is_working_Temperature_Defined#CB#(No,Yes)
+VALUE: No
+HELP: Working temperature
+DEPENDENCIES: (Yes,RESTORE,Working_Temperature,#CURRENT#)
+DEPENDENCIES: (No,HIDE,Working_Temperature,#CURRENT#)
+QUESTION: Working_Temperature
+VALUE: 0.
+HELP: The working temperature
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_temperature,#CURRENT#,HIDE,Piezoelectric_coefficient_with_temperature,#CURRENT#,HIDE,Dielectric_coefficient_with_temperature,#CURRENT#,HIDE,Phase_change_temperature,#CURRENT#,HIDE,Losses_coefficient_with_temperature,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_temperature,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_temperature,#CURRENT#,RESTORE,Dielectric_coefficient_with_temperature,#CURRENT#,RESTORE,Phase_change_temperature,#CURRENT#,RESTORE,Losses_coefficient_with_temperature,#CURRENT#)
+QUESTION: Phase_change_temperature
+VALUE: 0.0
+HELP: The temperature at phase change
+QUESTION: Elastic_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Losses_coefficient_with_temperature
+VALUE: 0.0
+HELP: Calculation of the Losses factor dependency
+IMAGE: non_linear.gif
+TITLE: Non-Linear
+QUESTION: Stress_Dependent#CB#(Yes,No)
+VALUE: No
+HELP: This material is stress dependent
+DEPENDENCIES: (No,HIDE,Elastic_coefficient_with_stress,#CURRENT#,HIDE,Piezoelectric_coefficient_with_stress,#CURRENT#,HIDE,Dielectric_coefficient_with_stress,#CURRENT#,HIDE,Pre-Stress,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Elastic_coefficient_with_stress,#CURRENT#,RESTORE,Piezoelectric_coefficient_with_stress,#CURRENT#,RESTORE,Dielectric_coefficient_with_stress,#CURRENT#,RESTORE,Pre-Stress,#CURRENT#)
+HELP: Calculation of the Dielectric factor dependency
+QUESTION: Pre-stress
+VALUE: 0.0
+HELP: Magnitude of pre-Stress
+QUESTION: Elastic_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Elastic factor dependency
+QUESTION: Piezoelectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Piezoelectric factor dependency
+QUESTION: Dielectric_coefficient_with_stress
+VALUE: 0.0
+HELP: Calculation of the Dielectric factor dependency
+IMAGE: non_linear.gif
+END MATERIAL
+BOOK:Fluid
+NUMBER: 21 MATERIAL: WATER
+TITLE: General
+QUESTION: TYPE#CB#(FLUID)
+VALUE: FLUID
+DEPENDENCIES: (FLUID,HIDE,TYPE,FLUID)
+QUESTION: BULK_MODULUS
+VALUE: 2.22e9
+HELP: Bulk modulus (N/m^2)
+QUESTION: DENSITY
+VALUE: 1000
+HELP: Density (kg/m^3)
+QUESTION: ENABLE_CAVITY#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,CAVITY_NUMBER,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,CAVITY_NUMBER,#CURRENT#)
+HELP: Is the Domain a cavity?
+QUESTION: CAVITY_NUMBER
+VALUE: 0
+HELP: In case of a static analysis this gives the cavity number
+TITLE: Losses
+QUESTION: COMP"
+VALUE: 0
+HELP: Imaginary part of the complex bulk modulus (N/m^2)
+END MATERIAL
+NUMBER: 22 MATERIAL: AIR_FLUID
+TITLE: General
+QUESTION: TYPE#CB#(FLUID)
+VALUE: FLUID
+DEPENDENCIES: (FLUID,HIDE,TYPE,FLUID)
+QUESTION: BULK_MODULUS
+VALUE: 1.42e5
+HELP: Bulk modulus (N/m^2)
+QUESTION: DENSITY
+VALUE: 1.2922
+HELP: Density (kg/m^3)
+QUESTION: ENABLE_CAVITY#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,CAVITY_NUMBER,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,CAVITY_NUMBER,#CURRENT#)
+HELP: Is the Domain a cavity?
+QUESTION: CAVITY_NUMBER
+VALUE: 0
+HELP: In case of a static analysis this defines the cavity number
+TITLE: Losses
+QUESTION: COMP"
+VALUE: 0
+HELP: Imaginary part of the complex bulk modulus (N/m^2)
+END MATERIAL
+BOOK:Thin_Elastic_Patch
+NUMBER: 23 MATERIAL: EPatch
+TITLE: General
+QUESTION: DENSITY
+VALUE: 3500
+HELP: Density (kg/m^3)
+QUESTION: Thickness
+VALUE: 0.3
+HELP: Thickness of the patch in Meters
+TITLE: Mechanical
+QUESTION: TYPE#CB#(ELASTIC_PATCH)
+VALUE: ELASTIC_PATCH
+DEPENDENCIES: (ELASTIC_PATCH,HIDE,TYPE,ELASTIC_PATCH)
+QUESTION: E1
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: E2
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: E3
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: nu12
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: nu13
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: nu23
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: G12
+VALUE: 210e9
+HELP: (N/m^2)
+QUESTION: G13
+VALUE: 210e9
+HELP: (N/m^2)
+QUESTION: G23
+VALUE: 210e9
+HELP: (N/m^2)
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+END MATERIAL
+BOOK:Thin_Piezo_Patch
+NUMBER: 24 MATERIAL: PPatch
+TITLE: General
+QUESTION: DENSITY
+VALUE: 544
+HELP: Density (kg/m^3)
+QUESTION: Spacing
+VALUE: 0.0005
+HELP: distance between two electrodes in Meters
+QUESTION: Potential#CB#(Forced,Floating)
+VALUE: Forced
+HELP: Select "Forced" to apply a ground condition or potential value. Select "Floating" to apply an undefined potential.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#)
+QUESTION: Identifier
+VALUE: 0
+HELP: Identifier number
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed potential (V).
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the imposed potential (deg.)
+QUESTION: Thickness
+VALUE: 0.0003
+HELP: Thickness of the patch in Meters
+TITLE: Mechanical
+QUESTION: TYPE#CB#(PIEZO_PATCH)
+VALUE: PIEZO_PATCH
+DEPENDENCIES: (PIEZO_PATCH,HIDE,TYPE,PIEZO_PATCH)
+QUESTION: E1
+VALUE: 15857E6
+HELP: Mechanical compliance at constant electric field (N/m^2)
+QUESTION: E3
+VALUE: 30336E6
+HELP: Mechanical compliance at constant electric field (N/m^2)
+QUESTION: NU13
+VALUE: 0.16
+HELP: Poisson's ratio
+QUESTION: NU12
+VALUE: 0.31
+HELP: Poisson's ratio
+QUESTION: G13
+VALUE: 5515E6
+HELP: Shear Modulus at constant electric field (N/m^2)
+QUESTION: d31
+VALUE: -1.7E-10
+HELP: PiezoElectric coefficient
+QUESTION: d33
+VALUE: 4.0E-10
+HELP: PiezoElectric coefficient
+TITLE: Dielectric
+QUESTION: E33T/E0
+VALUE: 260
+HELP: Effective relative dielectric permittivity at constant stress of the full patch
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.002
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.004
+HELP: Dielectric loss angle
+END MATERIAL
+BOOK:Elastic_Anisotropic
+NUMBER: 25 MATERIAL: STEEL1A
+TITLE: ELASTIC_ANISOTROPIC
+QUESTION: TYPE#CB#(ELASTIC_ANISOTROPIC)
+VALUE: ELASTIC_ANISOTROPIC
+DEPENDENCIES: (ELASTIC_ANISOTROPIC,HIDE,TYPE,ELASTIC_ANISOTROPIC)
+QUESTION: E1
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: E2
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: E3
+VALUE: 210e9
+HELP: Young's modulus (N/m^2)
+QUESTION: nu12
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: nu13
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: nu23
+VALUE: 0.285
+HELP: Poisson ratio
+QUESTION: DENSITY
+VALUE: 7800
+HELP: Density (kg/m^3)
+QUESTION: G12
+VALUE: 210e9
+HELP: (N/m^2)
+QUESTION: G13
+VALUE: 210e9
+HELP: (N/m^2)
+QUESTION: G23
+VALUE: 210e9
+HELP: (N/m^2)
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.0013
+HELP: Mechanical loss angle
+TITLE: Magnetic
+QUESTION: Enable_Magnetic#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Relative_Permeability,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Relative_Permeability,#CURRENT#)
+HELP: Enable computation of magnetic field over elastic region.
+QUESTION: Relative_Permeability
+VALUE: 1
+HELP: Relative magnetic permeability of the material.
+TITLE: Thermal
+QUESTION: Enable_Thermal#CB#(Yes,No)
+VALUE: No
+DEPENDENCIES: (No,HIDE,Specific_Heat,#CURRENT#,HIDE,Thermal_Conductivity,#CURRENT#,HIDE,Thermal_Expension,#CURRENT#)
+DEPENDENCIES: (Yes,RESTORE,Specific_Heat,#CURRENT#,RESTORE,Thermal_Conductivity,#CURRENT#,RESTORE,Thermal_Expension,#CURRENT#)
+HELP: Enable thermal computation over elastic region.
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+QUESTION: Thermal_Expension
+VALUE: 50e-6
+HELP: Thermal expension of the material (m / m) / deg.C)
+END MATERIAL
+BOOK:Magnetostrictive
+NUMBER: 26 MATERIAL: TEDYFE
+TITLE: Mechanical
+QUESTION: TYPE#CB#(MAGNETOSTRICTIVE)
+VALUE: MAGNETOSTRICTIVE
+DEPENDENCIES: (MAGNETOSTRICTIVE,HIDE,TYPE,MAGNETOSTRICTIVE)
+QUESTION: s11H
+VALUE: 27E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s12H
+VALUE: -4.3E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s13H
+VALUE: -19E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s33H
+VALUE: 42E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s44H
+VALUE: 16.7E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: DENSITY
+VALUE: 9200
+HELP: Density (kg/m^3)
+TITLE: Coupling
+QUESTION: d31
+VALUE: -5.2e-9
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d33
+VALUE: 10.4e-9
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d15
+VALUE: 28e-9
+HELP: Piezomagnetic constant (m/A)
+TITLE: Magnetic
+QUESTION: mu11T/mu0
+VALUE: 40.52
+HELP: Relative magnetic permeability at constant stress
+QUESTION: mu33T/mu0
+VALUE: 4.4
+HELP: Relative magnetic permeability at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.002
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.002
+HELP: Dielectric loss angle
+END MATERIAL
+NUMBER: 27 MATERIAL: TER40
+TITLE: Mechanical
+QUESTION: TYPE#CB#(MAGNETOSTRICTIVE)
+VALUE: MAGNETOSTRICTIVE
+DEPENDENCIES: (MAGNETOSTRICTIVE,HIDE,TYPE,MAGNETOSTRICTIVE)
+QUESTION: s11H
+VALUE: 43.9E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s12H
+VALUE: -11E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s13H
+VALUE: -16.5E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s33H
+VALUE: 37.6E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s44H
+VALUE: 18E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: DENSITY
+VALUE: 9100
+HELP: Density (kg/m^3)
+TITLE: Coupling
+QUESTION: d31
+VALUE: -4.26e-9
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d33
+VALUE: 8.53e-9
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d15
+VALUE: 22.7e-9
+HELP: Piezomagnetic constant (m/A)
+TITLE: Magnetic
+QUESTION: mu11T/mu0
+VALUE: 25.19
+HELP: Relative magnetic permeability at constant stress
+QUESTION: mu33T/mu0
+VALUE: 4.4
+HELP: Relative magnetic permeability at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.002
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.002
+HELP: Dielectric loss angle
+END MATERIAL
+NUMBER: 28 MATERIAL: JM
+TITLE: Mechanical
+QUESTION: TYPE#CB#(MAGNETOSTRICTIVE)
+VALUE: MAGNETOSTRICTIVE
+DEPENDENCIES: (MAGNETOSTRICTIVE,HIDE,TYPE,MAGNETOSTRICTIVE)
+QUESTION: s11H
+VALUE: 2.500E-11
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s12H
+VALUE: -1.800E-12
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s13H
+VALUE: -1.670E-11
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s33H
+VALUE: 4.000E-11
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: s44H
+VALUE: 1.800E-10
+HELP: Mechanical compliance at constant magnetic field (m^2/N)
+QUESTION: DENSITY
+VALUE: 9100
+HELP: Density (kg/m^3)
+TITLE: Coupling
+QUESTION: d31
+VALUE: -5.30E-09
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d33
+VALUE: 1.060E-08
+HELP: Piezomagnetic constant (m/A)
+QUESTION: d15
+VALUE: 2.80E-08
+HELP: Piezomagnetic constant (m/A)
+TITLE: Magnetic
+QUESTION: mu11T/mu0
+VALUE: 7.99
+HELP: Relative magnetic permeability at constant stress
+QUESTION: mu33T/mu0
+VALUE: 4.52
+HELP: Relative magnetic permeability at constant stress
+TITLE: Losses
+QUESTION: DELTA_M
+VALUE: 0.0
+HELP: Mechanical loss angle
+QUESTION: DELTA_P
+VALUE: 0.
+HELP: Piezoelectric loss angle
+QUESTION: DELTA_D
+VALUE: 0.0
+HELP: Dielectric loss angle
+END MATERIAL
+BOOK:Magnetic
+NUMBER: 29 MATERIAL: AIR_MAG
+QUESTION: TYPE#CB#(MAGNETIC)
+VALUE: MAGNETIC
+DEPENDENCIES: (MAGNETIC,HIDE,TYPE,MAGNETIC)
+QUESTION: RELATIVE_PERMEABILITY_(mu/mu0)
+VALUE: 1
+HELP: Relative magnetic permeability
+END MATERIAL
+NUMBER: 30 MATERIAL: CORO_MAG
+QUESTION: TYPE#CB#(MAGNETIC)
+VALUE: MAGNETIC
+DEPENDENCIES: (MAGNETIC,HIDE,TYPE,MAGNETIC)
+QUESTION: RELATIVE_PERMEABILITY_(mu/mu0)
+VALUE: 1.38e-4
+HELP: Relative magnetic permeability
+END MATERIAL
+NUMBER: 31 MATERIAL: MU1000
+QUESTION: TYPE#CB#(MAGNETIC)
+VALUE: MAGNETIC
+DEPENDENCIES: (MAGNETIC,HIDE,TYPE,MAGNETIC)
+QUESTION: RELATIVE_PERMEABILITY_(mu/mu0)
+VALUE: 1000
+HELP: Relative magnetic permeability
+END MATERIAL
+BOOK:Sysnoise_interface
+NUMBER: 32 MATERIAL: WATER_S
+TITLE: General
+QUESTION: TYPE#CB#(SYSNOISE)
+VALUE: SYSNOISE
+QUESTION: BULK_MODULUS
+VALUE: 2.22e9
+HELP: Bulk modulus (N/m^2)
+QUESTION: DENSITY
+VALUE: 1000
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: COMP"
+VALUE: 0
+HELP: Imaginary part of the complex bulk modulus (N/m^2)
+QUESTION: Read_SYSNOISE_Conditions#CB#(Yes,No)
+VALUE: No
+HELP: Read additional SYSNOISE conditions through a "scond" file
+END MATERIAL
+NUMBER: 33 MATERIAL: AIR_FLUID_S
+TITLE: General
+QUESTION: TYPE#CB#(SYSNOISE)
+VALUE: SYSNOISE
+QUESTION: BULK_MODULUS
+VALUE: 1.2566e-6
+HELP: Bulk modulus (N/m^2)
+QUESTION: DENSITY
+VALUE: 1.4
+HELP: Density (kg/m^3)
+TITLE: Losses
+QUESTION: COMP"
+VALUE: 0
+HELP: Imaginary part of the complex bulk modulus (N/m^2)
+QUESTION: Read_SYNOISE_Conditions#CB#(Yes,No)
+VALUE: No
+HELP: Read additional SYSNOISE conditions through a "scond" file
+END MATERIAL
+BOOK:Thermal
+NUMBER: 34 MATERIAL: GENERIC
+TITLE: Thermal
+QUESTION: TYPE#CB#(THERMAL)
+VALUE: THERMAL
+STATE: hidden
+QUESTION: Specific_Heat
+VALUE: 1
+HELP: Specific heat of the material (J / g x deg.C)
+QUESTION: Thermal_Conductivity
+VALUE: 1
+HELP: Thermal conductivity of the material (W / m x deg.C)
+END MATERIAL
+BOOK:Elastic_Shell
+NUMBER: 35 MATERIAL: SPatch
+TITLE: General
+QUESTION: TYPE#CB#(ELASTIC_SHELL)
+VALUE: ELASTIC_SHELL
+DEPENDENCIES: (ELASTIC_SHELL,HIDE,TYPE,ELASTIC_SHELL)
+QUESTION: Number_of_layers#CB#(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+VALUE: 1
+HELP: Number of layers
+DEPENDENCIES: (1,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,hidden,TITLESTATE,Layer_3,hidden,TITLESTATE,Layer_4,hidden,TITLESTATE,Layer_5,hidden,TITLESTATE,Layer_6,hidden,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (2,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,hidden,TITLESTATE,Layer_4,hidden,TITLESTATE,Layer_5,hidden,TITLESTATE,Layer_6,hidden,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (3,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,hidden,TITLESTATE,Layer_5,hidden,TITLESTATE,Layer_6,hidden,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (4,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,hidden,TITLESTATE,Layer_6,hidden,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (5,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,hidden,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (6,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,hidden,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (7,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,hidden,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (8,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,hidden,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (9,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,hidden,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (10,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,hidden,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (11,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,hidden,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (12,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,hidden,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (13,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,hidden,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (14,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,hidden,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (15,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,hidden,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (16,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,normal,TITLESTATE,Layer_17,hidden,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (17,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,normal,TITLESTATE,Layer_17,normal,TITLESTATE,Layer_18,hidden,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (18,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,normal,TITLESTATE,Layer_17,normal,TITLESTATE,Layer_18,normal,TITLESTATE,Layer_19,hidden,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (19,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,normal,TITLESTATE,Layer_17,normal,TITLESTATE,Layer_18,normal,TITLESTATE,Layer_19,normal,TITLESTATE,Layer_20,hidden)
+DEPENDENCIES: (20,TITLESTATE,Layer_1,normal,TITLESTATE,Layer_2,normal,TITLESTATE,Layer_3,normal,TITLESTATE,Layer_4,normal,TITLESTATE,Layer_5,normal,TITLESTATE,Layer_6,normal,TITLESTATE,Layer_7,normal,TITLESTATE,Layer_8,normal,TITLESTATE,Layer_9,normal,TITLESTATE,Layer_10,normal,TITLESTATE,Layer_11,normal,TITLESTATE,Layer_12,normal,TITLESTATE,Layer_13,normal,TITLESTATE,Layer_14,normal,TITLESTATE,Layer_15,normal,TITLESTATE,Layer_16,normal,TITLESTATE,Layer_17,normal,TITLESTATE,Layer_18,normal,TITLESTATE,Layer_19,normal,TITLESTATE,Layer_20,normal)
+TITLE: Layer_1
+QUESTION: Material_01#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_01
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_01
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_2
+QUESTION: Material_02#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_02
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_02
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_3
+QUESTION: Material_03#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_03
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_03
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_4
+QUESTION: Material_04#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_04
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_04
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_5
+QUESTION: Material_05#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_05
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_05
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_6
+QUESTION: Material_06#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_06
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_06
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_7
+QUESTION: Material_07#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_07
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_07
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_8
+QUESTION: Material_08#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_08
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_08
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_9
+QUESTION: Material_09#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_09
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_09
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_10
+QUESTION: Material_10#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_10
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_10
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_11
+QUESTION: Material_11#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_11
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_11
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_12
+QUESTION: Material_12#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_12
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_12
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_13
+QUESTION: Material_13#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_13
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_13
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_14
+QUESTION: Material_14#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_14
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_14
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_15
+QUESTION: Material_15#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_15
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_15
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_16
+QUESTION: Material_16#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_16
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_16
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_17
+QUESTION: Material_17#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_17
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_17
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_18
+QUESTION: Material_18#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_18
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_18
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_19
+QUESTION: Material_19#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_19
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_19
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+TITLE: Layer_20
+QUESTION: Material_20#MAT#(Elastic_Anisotropic)
+VALUE: STEEL1A
+HELP: Material
+QUESTION: Angle_20
+VALUE: 0.
+HELP: Angle from Global Axis (°)
+QUESTION: Thickness_20
+VALUE: 0.0003
+HELP: Thickness Layer in Meters
+END MATERIAL

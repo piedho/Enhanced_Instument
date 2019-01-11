@@ -1,0 +1,37 @@
+BeginZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\plaque SAMBA _ pola z _ co.gid\plaque SAMBA _ pola z _ co.vv
+   x -310.8839111328125 310.8839111328125
+   y 593.96502685546875 -593.96502685546875
+   z -1781.39501953125 1782.39501953125
+   e 593.96502685546875
+   v -0.48359382152557373 0.054805725812911987 -0.12155540287494659
+   r -0.86507666110992432
+   m 0.96444123983383179 -0.26331689953804016 0.022744579240679741 0 0.15730206668376923 0.50272256135940552 -0.85001534223556519 0 0.21238920092582703 0.8233676552772522 0.52626669406890869 0 0 0 0 1
+   c 0 0 -0.5
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\plaque SAMBA _ pola z _ co.gid\plaque SAMBA _ pola z _ co.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+

@@ -1,0 +1,37 @@
+BeginZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\plaque SAMBA sans piezo.gid\plaque SAMBA sans piezo.vv
+   x -519.69122314453125 1299.691162109375
+   y 1018.9650268554687 -168.96502685546875
+   z -1781.89501953125 1781.89501953125
+   e 593.96502685546875
+   v 0.32844288109798514 -0.022410374711794447 -0.011891963371972019
+   r 0.94418304907919703
+   m 0.99871271848678589 0.0077353245578706264 -0.050130654126405716 0 -0.037177436053752899 0.78396773338317871 -0.61968737840652466 0 0.034507330507040024 0.62075340747833252 0.78324609994888306 0 0 0 0 1
+   c 390 425 0
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 1
+   DrawingType 0
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:\Users\maxme\Documents\travail\M2\projet\ATILA\simu\plaque SAMBA sans piezo.gid\plaque SAMBA sans piezo.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+

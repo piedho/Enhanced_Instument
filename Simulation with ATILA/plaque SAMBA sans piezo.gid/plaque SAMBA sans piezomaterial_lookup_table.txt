@@ -1,0 +1,19 @@
+Lookup table for Material Names and Properties
+ (some properties are not printed when equal to zero)
+
+GiD Name   = STEEL1
+ATILA Name = M0001
+
+ Young's Modulus            E =    2.100000E+11 (N/m^2)         - E > 0
+ Poisson ratio             nu =    2.850000E-01                 - -1 < nu < 1/2
+ Density                  rho =    7.800000E+03 (kg/m^3)
+ Bulk Modulus               K =    1.627907E+11 (N/m^2)         - K > 0
+ Shear Modulus              G =    8.171206E+10 (N/m^2)         - G > 0
+ 1st Lam� constant         mu =    8.171206E+10 (N/m^2)         - mu = G
+ 2nd Lam� constant     lambda =    1.083160E+11 (N/m^2)
+ Quality factor             Q =    1.000000E+02 m/s
+ Longitudinal velocity     cL =    4.577315E+03 m/s             - wavelength < 1/5 specimen lateral direction
+ Shear velocity            cS =    3.236650E+03 m/s
+ Loss Modulus              E" =    2.100000E+09 (N/m^2)         - E" > 0
+ Loss Poisson ratio       nu" =    1.000000E-02                 - -E"(1+nu)/E < nu" < (1/2-nu)/E
+

@@ -1,0 +1,1963 @@
+NUMBER: 1 CONDITION: Acoustic_Center
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Radius
+VALUE: 0.0
+HELP: Radius of radiating boundary
+END CONDITION
+NUMBER: 2 CONDITION: Spin_definition
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Polarization#CB#(Cartesian,Cylindrical,Tangential,Spherical)
+VALUE: Cartesian
+HELP: Use the local coordinate system to orient the material.
+QUESTION: Local-Axes#LA#(No_Orientation)
+VALUE: No_Orientation
+HELP: Select the coordinate system to use for the material orientation.
+QUESTION: Circular_Frequency
+VALUE: 0.
+HELP: Circular Frequency (rpm).
+IMAGE: figure_ressort_gid.jpg
+END CONDITION
+NUMBER: 3 CONDITION: Point_Displacement
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X displacements with the same identifier value are linked.
+QUESTION: Y_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating Y displacements with the same identifier value are linked.
+QUESTION: Z_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating Z displacements with the same identifier value are linked.
+END CONDITION
+NUMBER: 4 CONDITION: Line_Displacement
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X displacements with the same identifier value are linked.
+QUESTION: Y_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating Y displacements with the same identifier value are linked.
+QUESTION: Z_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating Z displacements with the same identifier value are linked.
+END CONDITION
+NUMBER: 5 CONDITION: Surface_Displacement
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X displacements with the same identifier value are linked.
+QUESTION: Y_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating Y displacements with the same identifier value are linked.
+QUESTION: Z_Displacement#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed displacement in the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating Z displacements with the same identifier value are linked.
+END CONDITION
+NUMBER: 6 CONDITION: Point_Displacement_Transient
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 7 CONDITION: Line_Displacement_Transient
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 8 CONDITION: Surface_Displacement_Transient
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 9 CONDITION: Point_Electric_Potential
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Potential#CB#(Forced,Ground,Floating,Transient)
+VALUE: Forced
+HELP: Select "Forced" to apply a clamping condition or potential value. Select "Floating" to apply an undefined potential. Select "Transient" to assign transient excitation.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Ground,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#,RESTORE,Number_of_parallel_impedances,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed potential (V).
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the imposed potential (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: Identifier number
+QUESTION: Number_of_parallel_impedances#CB#(0,1,2,3)
+VALUE: 0
+HELP: Number of parallel R-C-L branchs.
+DEPENDENCIES: (0,HIDE,R1,#CURRENT#,HIDE,C1,#CURRENT#,HIDE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (1,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (2,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (3,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,RESTORE,R3,#CURRENT#,RESTORE,C3,#CURRENT#,RESTORE,L3,#CURRENT#)
+QUESTION: R1
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C1
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L1
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R2
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C2
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L2
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R3
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C3
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L3
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (V).
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+END CONDITION
+NUMBER: 10 CONDITION: Line_Electric_Potential
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: Potential#CB#(Forced,Ground,Floating,Transient)
+VALUE: Forced
+HELP: Select "Forced" to apply a clamping condition or potential value. Select "Floating" to apply an undefined potential. Select "Transient" to assign transient excitation.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Ground,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#,RESTORE,Number_of_parallel_impedances,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed potential (V).
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the imposed potential (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: Identifier number
+QUESTION: Number_of_parallel_impedances#CB#(0,1,2,3)
+VALUE: 0
+HELP: Number of parallel R-C-L branchs.
+DEPENDENCIES: (0,HIDE,R1,#CURRENT#,HIDE,C1,#CURRENT#,HIDE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (1,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (2,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (3,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,RESTORE,R3,#CURRENT#,RESTORE,C3,#CURRENT#,RESTORE,L3,#CURRENT#)
+QUESTION: R1
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C1
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L1
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R2
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C2
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L2
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R3
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C3
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L3
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (V).
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+END CONDITION
+NUMBER: 11 CONDITION: Surface_Electric_Potential
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: Potential#CB#(Forced,Ground,Floating,Transient)
+VALUE: Forced
+HELP: Select "Forced" to apply a clamping condition or potential value. Select "Floating" to apply an undefined potential. Select "Transient" to assign transient excitation.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Ground,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,HIDE,Waveform,None)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#,RESTORE,Number_of_parallel_impedances,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Number_of_parallel_impedances,0,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed potential (V).
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the imposed potential (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: Identifier number
+QUESTION: Number_of_parallel_impedances#CB#(0,1,2,3)
+VALUE: 0
+HELP: Number of parallel R-C-L branchs.
+DEPENDENCIES: (0,HIDE,R1,#CURRENT#,HIDE,C1,#CURRENT#,HIDE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (1,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,HIDE,R2,#CURRENT#,HIDE,C2,#CURRENT#,HIDE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (2,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,HIDE,R3,#CURRENT#,HIDE,C3,#CURRENT#,HIDE,L3,#CURRENT#)
+DEPENDENCIES: (3,RESTORE,R1,#CURRENT#,RESTORE,C1,#CURRENT#,RESTORE,L1,#CURRENT#,RESTORE,R2,#CURRENT#,RESTORE,C2,#CURRENT#,RESTORE,L2,#CURRENT#,RESTORE,R3,#CURRENT#,RESTORE,C3,#CURRENT#,RESTORE,L3,#CURRENT#)
+QUESTION: R1
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C1
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L1
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R2
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C2
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L2
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: R3
+VALUE: 0.0
+HELP: Resistance of the parallel electric network (Ohm).
+QUESTION: C3
+VALUE: 0.0
+HELP: Capacitance of the parallel electric network (F).
+QUESTION: L3
+VALUE: 0.0
+HELP: Inductance of the parallel electric network in (H).
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (V).
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+END CONDITION
+NUMBER: 12 CONDITION: Line_Radiating_Boundary
+CONDTYPE: over lines
+CONDMESHTYPE: over face elements
+QUESTION: Radiating_Boundary
+VALUE: Radiating_Boundary
+STATE: hidden
+END CONDITION
+NUMBER: 13 CONDITION: Surface_Radiating_Boundary
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+QUESTION: Radiating_Boundary
+VALUE: Radiating_Boundary
+STATE: hidden
+END CONDITION
+NUMBER: 14 CONDITION: Surface_Polarization
+CONDTYPE: over surfaces
+QUESTION: Polarization#CB#(Cartesian,Cylindrical,Tangential,Spherical)
+VALUE: Cartesian
+HELP: Use the local coordinate system to orient the material.
+DEPENDENCIES: (Cartesian,HIDE,Angle,#CURRENT#)
+DEPENDENCIES: (Cylindrical,HIDE,Angle,#CURRENT#)
+DEPENDENCIES: (Tangential,RESTORE,Angle,#CURRENT#)
+DEPENDENCIES: (Spherical,HIDE,Angle,#CURRENT#)
+QUESTION: Local-Axes#LA#(No_Orientation)
+VALUE: No_Orientation
+HELP: Select the coordinate system to use for the material orientation.
+QUESTION: Angle
+VALUE: 0.0
+HELP: Additionnal angle (°).
+END CONDITION
+NUMBER: 15 CONDITION: Volume_Polarization
+CONDTYPE: over volumes
+CONDMESHTYPE: over body elements
+QUESTION: Polarization#CB#(Cartesian,Cylindrical,Tangential,Spherical)
+VALUE: Cartesian
+HELP: Use the local coordinate system to orient the material.
+DEPENDENCIES: (Cartesian,HIDE,Angle,#CURRENT#)
+DEPENDENCIES: (Cylindrical,HIDE,Angle,#CURRENT#)
+DEPENDENCIES: (Tangential,RESTORE,Angle,#CURRENT#)
+DEPENDENCIES: (Spherical,HIDE,Angle,#CURRENT#)
+QUESTION: Local-Axes#LA#(No_Orientation)
+VALUE: No_Orientation
+HELP: Select the coordinate system to use for the material orientation.
+QUESTION: Angle
+VALUE: 0.0
+HELP: Additionnal angle (°).
+END CONDITION
+NUMBER: 16 CONDITION: Point_Pressure
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Pressure#CB#(Forced,Transient)
+VALUE: Forced
+HELP: Fluid pressure. May also be used to apply a distributed force.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the pressure (Pa)
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the pressure (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: All floating pressures with the same identifier value are linked.
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (P).
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+END CONDITION
+NUMBER: 17 CONDITION: Line_Pressure
+CONDTYPE: over lines
+CONDMESHTYPE: over face elements
+QUESTION: Pressure#CB#(Forced,Floating,Transient)
+VALUE: Forced
+HELP: Fluid pressure. May also be used to apply a distributed force.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the pressure (Pa)
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the pressure (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: All floating pressures with the same identifier value are linked.
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (P).
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+END CONDITION
+NUMBER: 18 CONDITION: Surface_Pressure
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+QUESTION: Pressure#CB#(Forced,Floating,Transient)
+VALUE: Forced
+HELP: Fluid pressure. May also be used to apply a distributed force.
+DEPENDENCIES: (Forced,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Floating,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,RESTORE,Identifier,#CURRENT#,HIDE,Waveform,None)
+DEPENDENCIES: (Transient,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#,HIDE,Identifier,#CURRENT#,RESTORE,Waveform,None)
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the pressure (Pa)
+QUESTION: Phase
+VALUE: 0.0
+HELP: Phase of the pressure (deg.)
+QUESTION: Identifier
+VALUE: 0
+HELP: All floating pressures with the same identifier value are linked.
+QUESTION: Waveform#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,RESTORE,TR,#CURRENT#,RESTORE,PW,#CURRENT#,RESTORE,TF,#CURRENT#,RESTORE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0,#CURRENT#,RESTORE,Va,#CURRENT#,RESTORE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,RESTORE,FREQ,#CURRENT#,RESTORE,AL,#CURRENT#,RESTORE,ZE,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0,#CURRENT#,HIDE,Va,#CURRENT#,HIDE,TD,#CURRENT#,HIDE,TR,#CURRENT#,HIDE,PW,#CURRENT#,HIDE,TF,#CURRENT#,HIDE,PER,#CURRENT#,HIDE,FREQ,#CURRENT#,HIDE,AL,#CURRENT#,HIDE,ZE,#CURRENT#)
+QUESTION: V0
+VALUE: 0.0
+HELP: Offset amplitude (P).
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 19 CONDITION: Surface_Geometry_Properties
+CONDTYPE: over surfaces
+COMMENT: NOT FULLY IMPLEMENTED
+QUESTION: THICKNESS
+VALUE: 1.0
+HELP: Thickness
+STATE: hidden
+QUESTION: TM
+VALUE: 1.0
+HELP: TM
+STATE: hidden
+QUESTION: TP
+VALUE: 1.0
+HELP: TP
+STATE: hidden
+END CONDITION
+NUMBER: 20 CONDITION: Point_Force
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: X_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Transient,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,RESTORE,Waveform_X,None)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global X direction (N).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global X direction (deg.)
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Y_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Transient,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,RESTORE,Waveform_Y,None)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Y direction (N).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Y direction (deg.)
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Z_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Transient,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,RESTORE,Waveform_Z,None)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Z direction (N).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Z direction (deg.)
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 21 CONDITION: Line_Force
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: X_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Transient,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,RESTORE,Waveform_X,None)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global X direction (N).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global X direction (deg.)
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Y_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Transient,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,RESTORE,Waveform_Y,None)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Y direction (N).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Y direction (deg.)
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Z_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Transient,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,RESTORE,Waveform_Z,None)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Z direction (N).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Z direction (deg.)
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 22 CONDITION: Surface_Force
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: X_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,Waveform_X,None)
+DEPENDENCIES: (Transient,HIDE,X_Amplitude,#CURRENT#,HIDE,X_Phase,#CURRENT#,RESTORE,Waveform_X,None)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global X direction (N).
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global X direction (deg.)
+QUESTION: Waveform_X#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,RESTORE,TR_X,#CURRENT#,RESTORE,PW_X,#CURRENT#,RESTORE,TF_X,#CURRENT#,RESTORE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_X,#CURRENT#,RESTORE,Va_X,#CURRENT#,RESTORE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,RESTORE,FREQ_X,#CURRENT#,RESTORE,AL_X,#CURRENT#,RESTORE,ZE_X,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_X,#CURRENT#,HIDE,Va_X,#CURRENT#,HIDE,TD_X,#CURRENT#,HIDE,TR_X,#CURRENT#,HIDE,PW_X,#CURRENT#,HIDE,TF_X,#CURRENT#,HIDE,PER_X,#CURRENT#,HIDE,FREQ_X,#CURRENT#,HIDE,AL_X,#CURRENT#,HIDE,ZE_X,#CURRENT#)
+QUESTION: V0_X
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_X
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_X
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_X
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_X
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_X
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_X
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_X
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_X
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_X
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Y_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,Waveform_Y,None)
+DEPENDENCIES: (Transient,HIDE,Y_Amplitude,#CURRENT#,HIDE,Y_Phase,#CURRENT#,RESTORE,Waveform_Y,None)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Y direction (N).
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Y direction (deg.)
+QUESTION: Waveform_Y#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,RESTORE,TR_Y,#CURRENT#,RESTORE,PW_Y,#CURRENT#,RESTORE,TF_Y,#CURRENT#,RESTORE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Y,#CURRENT#,RESTORE,Va_Y,#CURRENT#,RESTORE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,RESTORE,FREQ_Y,#CURRENT#,RESTORE,AL_Y,#CURRENT#,RESTORE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Y,#CURRENT#,HIDE,Va_Y,#CURRENT#,HIDE,TD_Y,#CURRENT#,HIDE,TR_Y,#CURRENT#,HIDE,PW_Y,#CURRENT#,HIDE,TF_Y,#CURRENT#,HIDE,PER_Y,#CURRENT#,HIDE,FREQ_Y,#CURRENT#,HIDE,AL_Y,#CURRENT#,HIDE,ZE_Y,#CURRENT#)
+QUESTION: V0_Y
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Y
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Y
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Y
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Y
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Y
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Y
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Y
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Y
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Y
+VALUE: 0
+HELP: Phase shift (Rd).
+QUESTION: Z_Force#CB#(None,Forced,Transient)
+VALUE: None
+HELP: Component of the imposed force in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,Waveform_Z,None)
+DEPENDENCIES: (Transient,HIDE,Z_Amplitude,#CURRENT#,HIDE,Z_Phase,#CURRENT#,RESTORE,Waveform_Z,None)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed force in the global Z direction (N).
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed force in the global Z direction (deg.)
+QUESTION: Waveform_Z#CB#(Sine,Pulse,Custom,None)
+VALUE: None
+HELP: Waveform
+DEPENDENCIES: (Pulse,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,RESTORE,TR_Z,#CURRENT#,RESTORE,PW_Z,#CURRENT#,RESTORE,TF_Z,#CURRENT#,RESTORE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Sine,RESTORE,V0_Z,#CURRENT#,RESTORE,Va_Z,#CURRENT#,RESTORE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,RESTORE,FREQ_Z,#CURRENT#,RESTORE,AL_Z,#CURRENT#,RESTORE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (Custom,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+DEPENDENCIES: (None,HIDE,V0_Z,#CURRENT#,HIDE,Va_Z,#CURRENT#,HIDE,TD_Z,#CURRENT#,HIDE,TR_Z,#CURRENT#,HIDE,PW_Z,#CURRENT#,HIDE,TF_Z,#CURRENT#,HIDE,PER_Z,#CURRENT#,HIDE,FREQ_Z,#CURRENT#,HIDE,AL_Z,#CURRENT#,HIDE,ZE_Z,#CURRENT#)
+QUESTION: V0_Z
+VALUE: 0.0
+HELP: Offset amplitude.
+IMAGE: figure_sine_pulse.jpg
+QUESTION: Va_Z
+VALUE: 0
+HELP: Amplitude (peak value).
+QUESTION: TD_Z
+VALUE: 0
+HELP: Delay time (s).
+QUESTION: TR_Z
+VALUE: 0
+HELP: Rise time (s).
+QUESTION: PW_Z
+VALUE: 0
+HELP: Pulse width (s).
+QUESTION: TF_Z
+VALUE: 0
+HELP: Fall time (s).
+QUESTION: PER_Z
+VALUE: 0
+HELP: Period (s).
+QUESTION: FREQ_Z
+VALUE: 0
+HELP: Frequency (Hz).
+QUESTION: AL_Z
+VALUE: 0
+HELP: Damping factor (1/s).
+QUESTION: ZE_Z
+VALUE: 0
+HELP: Phase shift (Rd).
+END CONDITION
+NUMBER: 23 CONDITION: Line_Magnetic_Field_Boundary
+CONDTYPE: over lines
+CONDMESHTYPE: over face elements
+END CONDITION
+NUMBER: 24 CONDITION: Surface_Magnetic_Field_Boundary
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+END CONDITION
+NUMBER: 25 CONDITION: Point_Inductor
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Type#CB#(Uniform_Field,Cylindrical)
+VALUE: Uniform_Field
+DEPENDENCIES: (Uniform_Field,RESTORE,X_Component,#CURRENT#,RESTORE,Y_Component,#CURRENT#,RESTORE,Z_Component,#CURRENT#,HIDE,X_Loop,#CURRENT#,HIDE,Y_Loop,#CURRENT#,HIDE,Z_Loop,#CURRENT#,HIDE,Number_of_Turns,#CURRENT#,HIDE,Length,#CURRENT#,HIDE,Outer_radius,#CURRENT#,HIDE,Wall_Thickness,#CURRENT#,HIDE,Width,#CURRENT#,HIDE,Depth,#CURRENT#,HIDE,Corner_Radius,#CURRENT#,HIDE,Excitation,#CURRENT#,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#)
+DEPENDENCIES: (Cylindrical,RESTORE,X_Component,#CURRENT#,RESTORE,Y_Component,#CURRENT#,RESTORE,Z_Component,#CURRENT#,HIDE,X_Loop,#CURRENT#,HIDE,Y_Loop,#CURRENT#,HIDE,Z_Loop,#CURRENT#,RESTORE,Number_of_Turns,#CURRENT#,RESTORE,Length,#CURRENT#,RESTORE,Outer_radius,#CURRENT#,RESTORE,Wall_Thickness,#CURRENT#,HIDE,Width,#CURRENT#,HIDE,Depth,#CURRENT#,HIDE,Corner_Radius,#CURRENT#,RESTORE,Excitation,#CURRENT#)
+HELP: Type of inductor. "Uniform Field" indicates a constant magnetic field over the whole space. The point of application of Cylindrical inductors is of no importance, but must be different for each inductor.
+QUESTION: X_Component
+VALUE: 0.0
+HELP: In the case of "Uniform Field" this is the X component of the magnetic field. In the other cases, this is the X component of the inductor axis direction.
+QUESTION: Y_Component
+VALUE: 0.0
+HELP: In the case of "Uniform Field" this is the Y component of the magnetic field. In the other cases, this is the Y component of the inductor axis direction.
+QUESTION: Z_Component
+VALUE: 0.0
+HELP: In the case of "Uniform Field" this is the Z component of the magnetic field. In the other cases, this is the Z component of the inductor axis direction.
+QUESTION: X_Loop
+VALUE: 0.0
+HELP: X component of the Width direction of the rectangular loop.
+QUESTION: Y_Loop
+VALUE: 0.0
+HELP: Y component of the Width direction of the rectangular loop.
+QUESTION: Z_Loop
+VALUE: 0.0
+HELP: Z component of the Width direction of the rectangular loop.
+QUESTION: Number_of_Turns
+VALUE: 0
+HELP: Number of turns in the inductor.
+QUESTION: Length
+VALUE: 0.0
+HELP: Length of the inductor (in the axis direction) (model units).
+QUESTION: Outer_radius
+VALUE: 0.0
+HELP: Outer radius of the cylindrical inductor (model units).
+QUESTION: Wall_Thickness
+VALUE: 0.0
+HELP: Wall thickness of the inductor (model units).
+QUESTION: Width
+VALUE: 0.0
+HELP: Width of the rectangular loop (model units).
+QUESTION: Depth
+VALUE: 0.0
+HELP: Depth of the rectangular loop (model units).
+QUESTION: Corner_Radius
+VALUE: 0.0
+HELP: Radius of the corners of the rectangular inductor (model units).
+QUESTION: Excitation#CB#(None,Current,Voltage)
+VALUE: Current
+DEPENDENCIES: (None,HIDE,Amplitude,#CURRENT#,HIDE,Phase,#CURRENT#)
+DEPENDENCIES: (Current,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#)
+DEPENDENCIES: (Voltage,RESTORE,Amplitude,#CURRENT#,RESTORE,Phase,#CURRENT#)
+HELP: Type of excitation for a Cylindrical or Rectangular coil.
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: In the case of a "Uniform Field", this is the magnitude of the magnetic field (A/m). In the case of Cylindrical or Rectangular inductors, this is the magnitude of the current in the coil (A).
+QUESTION: Phase
+VALUE: 0.0
+HELP: In the case of a "Uniform Field", this is the phase of the magnetic field (deg.). In the case of Cylindrical or Rectangular inductors, this is the phase of the current in the coil (deg.).
+END CONDITION
+NUMBER: 26 CONDITION: Point_Temperature
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: Temperature
+VALUE: 20.0
+HELP: Temperature in °C.
+END CONDITION
+NUMBER: 27 CONDITION: Line_Temperature
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: Temperature
+VALUE: 20.0
+HELP: Temperature in °C.
+END CONDITION
+NUMBER: 28 CONDITION: Surface_Temperature
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: Temperature
+VALUE: 20.0
+HELP: Temperature in °C.
+END CONDITION
+NUMBER: 29 CONDITION: Line_Convection
+CONDTYPE: over lines
+CONDMESHTYPE: over face elements
+QUESTION: Convection_coefficient
+VALUE: 0.0
+HELP: Local convection coefficient (W / m^2 x deg.C)
+QUESTION: Quiescent_temperature
+VALUE: 25
+HELP: Quiescent or ambient temperature (deg.C)
+END CONDITION
+NUMBER: 30 CONDITION: Surface_Convection
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+QUESTION: Convection_coefficient
+VALUE: 0.0
+HELP: Local convection coefficient (W / m^2 x deg.C)
+QUESTION: Quiescent_temperature
+VALUE: 25
+HELP: Quiescent or ambient temperature (deg.C)
+END CONDITION
+NUMBER: 31 CONDITION: Initial_Point_Displacement
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,x_flag,0)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,HIDE,x_flag,1)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: Y_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,y_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,HIDE,y_flag,1)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Z_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,z_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,HIDE,z_flag,1)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 32 CONDITION: Initial_Line_Displacement
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,x_flag,0)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,HIDE,x_flag,1)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: Y_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,y_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,HIDE,y_flag,1)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Z_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,z_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,HIDE,z_flag,1)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 33 CONDITION: Initial_Surface_Displacement
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: X_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global X direction.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,x_flag,0)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,HIDE,x_flag,1)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global X direction (model units).
+QUESTION: Y_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Y direction.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,y_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,HIDE,y_flag,1)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Y direction (model units).
+QUESTION: Z_Displacement#CB#(None,Forced)
+VALUE: None
+HELP: Component of the imposed displacement in the global Z direction.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,z_flag,0)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,HIDE,z_flag,1)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed displacement in the global Z direction (model units).
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 34 CONDITION: Initial_Line_Pressure
+CONDTYPE: over lines
+CONDMESHTYPE: over face elements
+QUESTION: Pressure#CB#(Forced)
+VALUE: Forced
+HELP: Fluid pressure. May also be used to apply a distributed force.
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the pressure (Pa)
+END CONDITION
+NUMBER: 35 CONDITION: Initial_Surface_Pressure
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+QUESTION: Pressure#CB#(Forced)
+VALUE: Forced
+HELP: Fluid pressure. May also be used to apply a distributed force.
+QUESTION: Amplitude
+VALUE: 0.0
+HELP: Amplitude of the pressure (Pa)
+END CONDITION
+NUMBER: 36 CONDITION: Volume_Temperature
+CONDTYPE: over volumes
+CONDMESHTYPE: over nodes
+QUESTION: Temperature
+VALUE: 20.0
+HELP: Temperature in °C.
+END CONDITION
+NUMBER: 37 CONDITION: Point_Results_at_nodes
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+HELP: To get results at specific nodes in a file after calculation
+END CONDITION
+NUMBER: 38 CONDITION: Line_Results_at_nodes
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+HELP: To get results at specific nodes in a file after calculation
+END CONDITION
+NUMBER: 39 CONDITION: Surface_Results_at_nodes
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+HELP: To get results at specific nodes in a file after calculation
+END CONDITION
+NUMBER: 40 CONDITION: Point_Rotation
+CONDTYPE: over points
+CONDMESHTYPE: over nodes
+QUESTION: X_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global X direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X rotations with the same identifier value are linked.
+QUESTION: Y_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Y direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating rotations with the same identifier value are linked.
+QUESTION: Z_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Z direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating r otations with the same identifier value are linked.
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 41 CONDITION: Line_Rotation
+CONDTYPE: over lines
+CONDMESHTYPE: over nodes
+QUESTION: X_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global X direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X rotations with the same identifier value are linked.
+QUESTION: Y_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Y direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating rotations with the same identifier value are linked.
+QUESTION: Z_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Z direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating r otations with the same identifier value are linked.
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 42 CONDITION: Surface_Rotation
+CONDTYPE: over surfaces
+CONDMESHTYPE: over nodes
+QUESTION: X_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global X direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,0,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,X_Amplitude,#CURRENT#,RESTORE,X_Phase,#CURRENT#,HIDE,x_flag,1,HIDE,X_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,X_Amplitude,0.0,HIDE,X_Phase,0.0,RESTORE,X_Identifier,#CURRENT#)
+QUESTION: X_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global X direction (deg.)
+QUESTION: X_Identifier
+VALUE: 0
+HELP: All floating X rotations with the same identifier value are linked.
+QUESTION: Y_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Y direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,0,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Y_Amplitude,#CURRENT#,RESTORE,Y_Phase,#CURRENT#,HIDE,y_flag,1,HIDE,Y_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Y_Amplitude,0.0,HIDE,Y_Phase,0.0,RESTORE,Y_Identifier,#CURRENT#)
+QUESTION: Y_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Y direction (deg.)
+QUESTION: Y_Identifier
+VALUE: 0
+HELP: All floating rotations with the same identifier value are linked.
+QUESTION: Z_Rotation#CB#(None,Clamped,Forced,Floating)
+VALUE: None
+HELP: Component of the imposed rotation about the global Z direction. This condition only applies to specific elements.
+DEPENDENCIES: (None,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,0,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Clamped,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Forced,RESTORE,Z_Amplitude,#CURRENT#,RESTORE,Z_Phase,#CURRENT#,HIDE,z_flag,1,HIDE,Z_Identifier,#CURRENT#)
+DEPENDENCIES: (Floating,HIDE,Z_Amplitude,0.0,HIDE,Z_Phase,0.0,RESTORE,Z_Identifier,#CURRENT#)
+QUESTION: Z_Amplitude
+VALUE: 0.0
+HELP: Amplitude of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Phase
+VALUE: 0.0
+HELP: Phase of the imposed rotation about the global Z direction (deg.)
+QUESTION: Z_Identifier
+VALUE: 0
+HELP: All floating r otations with the same identifier value are linked.
+QUESTION: x_flag
+VALUE: 0
+STATE: hidden
+QUESTION: y_flag
+VALUE: 0
+STATE: hidden
+QUESTION: z_flag
+VALUE: 0
+STATE: hidden
+END CONDITION
+NUMBER: 43 CONDITION: Surface_Local_Axes
+CONDTYPE: over surfaces
+CONDMESHTYPE: over body elements
+QUESTION: Local_Axes#LA#(On_Surface#A#)
+VALUE: On_Surface
+END CONDITION
+NUMBER: 44 CONDITION: Surface_BEM_Fluid_Fluid_Boundary
+CONDTYPE: over surfaces
+CONDMESHTYPE: over face elements
+QUESTION: MaterialFF#MAT#(Fluid)
+VALUE: WATER
+HELP: Material
+END CONDITION
